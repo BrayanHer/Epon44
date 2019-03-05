@@ -50,6 +50,9 @@
             <li>
               <a href="#">Tareas</a>
             </li>
+            <li>
+              <a href="{{route('Planeacion')}}">Planeacion y Examenes</a>
+            </li>
           </ul>
         </li>
 <!-- fin de lista de maestros -->

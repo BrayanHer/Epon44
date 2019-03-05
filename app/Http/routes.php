@@ -20,6 +20,8 @@ Route::get('/Vinculacion','RutasView@V_Vinculacion')->name('Vinculacion');
 Route::get('/Reinscripciones','RutasView@V_Reinscripciones')->name('Reinscripciones');
 Route::get('/Inscripciones','RutasView@V_Inscripciones')->name('Inscripciones');
 Route::get('/Tramites','RutasView@V_Tramites')->name('Tramites');
+Route::get('/Planeacion','RutasView@S_planenacion')->name('Planeacion');
+
 //--method---Alias de la vista--/controlador----funcion----name+alias de la visa
 Route::get('/Alumnos','Alumno@Alumnos')->name('Alumnos');
 Route::POST('/GAlumnos','Alumno@GAlumnos')->name('GAlumnos');

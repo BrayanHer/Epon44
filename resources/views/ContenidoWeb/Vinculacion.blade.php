@@ -20,14 +20,41 @@
 
     <!-- Custom CSS -->
     <link href="serv/css/stylish-portfolio.min.css" rel="stylesheet">
+    <style>
+    #tcol{
+      font-size:150%;
+    }
+    </style>
 </head>
 <body>
     <!-- Portfolio -->
     <section class="content-section" id="portfolio">
       <div class="container">
         <div class="content-section-heading text-center">
+          <h2 class="mb-5">Becas y Avisos</h2>
+        </div>
+        
+        <div class="container" >
+        <div class="row">
+          <div class="portfolio-item col-lg-6">
+            <a  href="#">
+              <img class="img-fluid" src="serv/img/beca.jpg" alt="">
+            </a>
+          </div>
+          
+          <div class="col-lg-6">
+              <span class="caption">
+                <span class="caption-content"> 
+                  <p  id="tcol"class="mb-2" align="justify">Si cumples con los requisito, aplica para la beca.. ¡NO TE QUEDES AFUERA!</p>
+                </span>
+              </span>
+
+          </div>
+        </div>
+        <div class="content-section-heading text-center">
           <h2 class="mb-5">Talleres</h2>
         </div>
+        <br>
         <div class="row no-gutters">
           <div class="col-lg-6">
             <a class="portfolio-item" href="#">

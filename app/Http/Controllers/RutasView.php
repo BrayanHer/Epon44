@@ -45,6 +45,7 @@
         public function V_Tramites(){
             return view('ContenidoWeb.Tramites');
         }
+
         // Sistema
         public function V_Admin(){
             if(Session::get('sesionidu')!="")
@@ -78,6 +79,10 @@
                 Session::flash('error', 'Debe iniciar sesion');
                 return redirect()->route('login');
             }
+
           
+        }
+        public function S_planenacion(){
+            return view('Maestros.Planeacion');
         }
     }
