@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="pagina/Sub1/css/animate.css">
     <!-- Main-Stylesheets -->
     <link rel="stylesheet" href="pagina/Sub1/css/normalize.css">
-    <link rel="stylesheet" href="Sub1/style.css">
-    <link rel="stylesheet" href="Sub1/css/responsive.css">
+    <link rel="stylesheet" href="pagina/Sub1/style.css">
+    <link rel="stylesheet" href="pagina/Sub1/css/responsive.css">
     <script src="pagina/Sub1/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
