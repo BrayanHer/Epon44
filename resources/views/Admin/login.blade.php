@@ -15,13 +15,30 @@
   <link href="admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Custom styles for this template-->
   <link href="admin/css/sb-admin.css" rel="stylesheet">
+<style>
+#HedLog{
+  position: relative;
+  left: 160px;
+  color:black;
+}
+</style>
 </head>
 
 <body class="bg-dark">
   <div class="container">
     <div class="card card-login mx-auto mt-5">
-      <div class="card-header">
+    <div class="card-header">
+<i class="fa fa-lock" aria-hidden="true"></i>
       Iniciar Sesión
+
+
+<a id="HedLog"href="{{route('apin')}}">
+<i class="fa fa-reply" aria-hidden="true"></i>
+   Regresar
+</a>
+      
+
+
       </div>
       <div class="card-body">
       <form action="{{route('iniciasesion')}}" method="POST">
