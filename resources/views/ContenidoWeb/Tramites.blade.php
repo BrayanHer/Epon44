@@ -4,19 +4,19 @@
 <html lang="en">
 <head>
     <title>Document</title>
-    <link rel="apple-touch-icon" href="Sub1/images/apple-touch-icon.png">
-    <link rel="shortcut icon" type="Sub1/image/ico" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" href="pagina/Sub1/images/apple-touch-icon.png">
+    <link rel="shortcut icon" type="pagina/Sub1/image/ico" href="images/favicon.ico" />
     <!-- Plugin-CSS -->
-    <link rel="stylesheet" href="Sub1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Sub1/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="Sub1/css/themify-icons.css">
-    <link rel="stylesheet" href="Sub1/css/magnific-popup.css">
-    <link rel="stylesheet" href="Sub1/css/animate.css">
+    <link rel="stylesheet" href="pagina/Sub1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="pagina/Sub1/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="pagina/Sub1/css/themify-icons.css">
+    <link rel="stylesheet" href="pagina/Sub1/css/magnific-popup.css">
+    <link rel="stylesheet" href="pagina/Sub1/css/animate.css">
     <!-- Main-Stylesheets -->
-    <link rel="stylesheet" href="Sub1/css/normalize.css">
-    <link rel="stylesheet" href="Sub1/style.css">
-    <link rel="stylesheet" href="Sub1/css/responsive.css">
-    <script src="Sub1/js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="pagina/Sub1/css/normalize.css">
+    <link rel="stylesheet" href="pagina/Sub1/style.css">
+    <link rel="stylesheet" href="pagina/Sub1/css/responsive.css">
+    <script src="pagina/Sub1/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 <section class="gray-bg section-padding" id="faq-page">
@@ -85,17 +85,17 @@
         </div>
     </section>
     <!--Vendor-JS-->
-    <script src="Sub1/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="Sub1/js/vendor/bootstrap.min.js"></script>
+    <script src="pagina/Sub1/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="pagina/Sub1/js/vendor/bootstrap.min.js"></script>
     <!--Plugin-JS-->
-    <script src="Sub1/js/owl.carousel.min.js"></script>
-    <script src="Sub1/js/contact-form.js"></script>
-    <script src="Sub1/js/jquery.parallax-1.1.3.js"></script>
-    <script src="Sub1/js/scrollUp.min.js"></script>
-    <script src="Sub1/js/magnific-popup.min.js"></script>
-    <script src="Sub1/js/wow.min.js"></script>
+    <script src="pagina/Sub1/js/owl.carousel.min.js"></script>
+    <script src="pagina/Sub1/js/contact-form.js"></script>
+    <script src="pagina/Sub1/js/jquery.parallax-1.1.3.js"></script>
+    <script src="pagina/Sub1/js/scrollUp.min.js"></script>
+    <script src="pagina/Sub1/js/magnific-popup.min.js"></script>
+    <script src="pagina/Sub1/js/wow.min.js"></script>
     <!--Main-active-JS-->
-    <script src="Sub1/js/main.js"></script>
+    <script src="pagina/Sub1/js/main.js"></script>
 </body>
 </html>
 @stop

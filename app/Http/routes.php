@@ -21,6 +21,13 @@ Route::get('/Reinscripciones','RutasView@V_Reinscripciones')->name('Reinscripcio
 Route::get('/Inscripciones','RutasView@V_Inscripciones')->name('Inscripciones');
 Route::get('/Tramites','RutasView@V_Tramites')->name('Tramites');
 Route::get('/Planeacion','RutasView@S_planenacion')->name('Planeacion');
+Route::get('/Listas','RutasView@S_Listas')->name('Listas');
+Route::get('/A_Materias','RutasView@A_Materias')->name('A_Materias');
+Route::get('/RegistroE','RutasView@RegistroE')->name('RegistroE');
+Route::get('/RegistroP','RutasView@RegistroP')->name('RegistroP');
+
+
+
 
 //--method---Alias de la vista--/controlador----funcion----name+alias de la visa
 Route::get('/Alumnos','Alumno@Alumnos')->name('Alumnos');

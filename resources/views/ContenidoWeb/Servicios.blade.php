@@ -16,15 +16,15 @@
     <title>Stylish Portfolio - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="serv/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="pagina/serv/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="serv/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="pagina/serv/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="serv/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="pagina/serv/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="serv/css/stylish-portfolio.min.css" rel="stylesheet">
+    <link href="pagina/serv/css/stylish-portfolio.min.css" rel="stylesheet">
 <style>
 a{
   color:black;
@@ -210,14 +210,14 @@ D) Imprimir tu comprobante de Pre-registro y recuperar las firmas que se solicit
     </a>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="serv/vendor/jquery/jquery.min.js"></script>
-    <script src="serv/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="pagina/serv/vendor/jquery/jquery.min.js"></script>
+    <script src="pagina/serv/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="serv/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="pagina/serv/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="serv/js/stylish-portfolio.min.js"></script>
+    <script src="pagina/serv/js/stylish-portfolio.min.js"></script>
 </body>
 </html>
 @stop

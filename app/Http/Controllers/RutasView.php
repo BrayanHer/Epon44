@@ -78,11 +78,22 @@
             else{
                 Session::flash('error', 'Debe iniciar sesion');
                 return redirect()->route('login');
-            }
-
-          
+            }          
         }
         public function S_planenacion(){
             return view('Maestros.Planeacion');
         }
+        public function S_Listas(){
+            return view('V_admin.A_Listas');
+        }
+        public function A_Materias(){
+            return view('V_admin.Materias');
+        }
+        public function RegistroP(){
+            return view('Maestros.RegistroP');
+        }
+        public function RegistroE(){
+            return view('Maestros.RegistroE');
+        }
+        
     }

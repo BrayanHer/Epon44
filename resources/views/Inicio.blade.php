@@ -20,22 +20,22 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
         
         <!-- Fontawesome Icon font -->
-        <link rel="stylesheet" href="In/css/font-awesome.min.css">
+        <link rel="stylesheet" href="pagina/In/css/font-awesome.min.css">
         <!-- bootstrap.min -->
-        <link rel="stylesheet" href="In/css/jquery.fancybox.css">
+        <link rel="stylesheet" href="pagina/In/css/jquery.fancybox.css">
         <!-- bootstrap.min -->
-        <link rel="stylesheet" href="In/css/bootstrap.min.css">
+        <link rel="stylesheet" href="pagina/In/css/bootstrap.min.css">
         <!-- bootstrap.min -->
-        <link rel="stylesheet" href="In/css/owl.carousel.css">
+        <link rel="stylesheet" href="pagina/In/css/owl.carousel.css">
         <!-- bootstrap.min -->
-        <link rel="stylesheet" href="In/css/slit-slider.css">
+        <link rel="stylesheet" href="pagina/In/css/slit-slider.css">
         <!-- bootstrap.min -->
-        <link rel="stylesheet" href="In/css/animate.css">
+        <link rel="stylesheet" href="pagina/In/css/animate.css">
         <!-- Main Stylesheet -->
-        <link rel="stylesheet" href="In/css/main.css">
+        <link rel="stylesheet" href="pagina/In/css/main.css">
 
         <!-- Modernizer Script for old Browsers -->
-        <script src="In/js/modernizr-2.6.2.min.js"></script>
+        <script src="pagina/In/js/modernizr-2.6.2.min.js"></script>
 
     </head>
     
@@ -132,26 +132,26 @@
         <!-- Essential jQuery Plugins
         ================================================== -->
         <!-- Main jQuery -->
-        <script src="In/js/jquery-1.11.1.min.js"></script>
+        <script src="pagina/In/js/jquery-1.11.1.min.js"></script>
         <!-- Twitter Bootstrap -->
-        <script src="In/js/bootstrap.min.js"></script>
+        <script src="pagina/In/js/bootstrap.min.js"></script>
         <!-- Single Page Nav -->
-        <script src="In/js/jquery.singlePageNav.min.js"></script>
+        <script src="pagina/In/js/jquery.singlePageNav.min.js"></script>
         <!-- jquery.fancybox.pack -->
-        <script src="In/js/jquery.fancybox.pack.js"></script>
+        <script src="pagina/In/js/jquery.fancybox.pack.js"></script>
         <!-- Google Map API -->
         <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <!-- Owl Carousel -->
-        <script src="In/js/owl.carousel.min.js"></script>
+        <script src="pagina/In/js/owl.carousel.min.js"></script>
         <!-- jquery easing -->
-        <script src="In/js/jquery.easing.min.js"></script>
+        <script src="pagina/In/js/jquery.easing.min.js"></script>
         <!-- Fullscreen slider -->
-        <script src="In/js/jquery.slitslider.js"></script>
-        <script src="In/js/jquery.ba-cond.min.js"></script>
+        <script src="pagina/In/js/jquery.slitslider.js"></script>
+        <script src="pagina/In/js/jquery.ba-cond.min.js"></script>
         <!-- onscroll animation -->
-        <script src="In/js/wow.min.js"></script>
+        <script src="pagina/In/js/wow.min.js"></script>
         <!-- Custom Functions -->
-        <script src="In/js/main.js"></script>
+        <script src="pagina/In/js/main.js"></script>
         <div>
         @yield('slider')
         </div>

@@ -6,7 +6,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
+		<link rel="shortcut icon" href="pagina/img/fav.png">
 		<!-- Author Meta -->
 		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
@@ -20,14 +20,14 @@
 
 		<link href="" rel="stylesheet"> 
 			<!-- CSS ============================================= -->
-			<link rel="stylesheet" href="ub/css/linearicons.css">
-			<link rel="stylesheet" href="ub/css/font-awesome.min.css">
-			<link rel="stylesheet" href="ub/css/magnific-popup.css">
-			<link rel="stylesheet" href="ub/css/nice-select.css">							
-			<link rel="stylesheet" href="ub/css/animate.min.css">
-			<link rel="stylesheet" href="ub/css/jquery-ui.css">			
-			<link rel="stylesheet" href="ub/css/owl.carousel.css">
-			<link rel="stylesheet" href="ub/css/main.css">
+			<link rel="stylesheet" href="pagina/ub/css/linearicons.css">
+			<link rel="stylesheet" href="pagina/ub/css/font-awesome.min.css">
+			<link rel="stylesheet" href="pagina/ub/css/magnific-popup.css">
+			<link rel="stylesheet" href="pagina/ub/css/nice-select.css">							
+			<link rel="stylesheet" href="pagina/ub/css/animate.min.css">
+			<link rel="stylesheet" href="pagina/ub/css/jquery-ui.css">			
+			<link rel="stylesheet" href="pagina/ub/css/owl.carousel.css">
+			<link rel="stylesheet" href="pagina/ub/css/main.css">
 	</head>
 	<body>	
 		<!-- Start contact-page Area -->
@@ -98,20 +98,20 @@
 		</section>
 			<!-- End contact-page Area -->
 
-			<script src="ub/js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="pagina/ub/js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="ub/js/vendor/bootstrap.min.js"></script>			
+			<script src="pagina/ub/js/vendor/bootstrap.min.js"></script>			
 			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-  			<script src="ub/js/easing.min.js"></script>			
-			<script src="ub/js/hoverIntent.js"></script>
-			<script src="ub/js/superfish.min.js"></script>	
-			<script src="ub/js/jquery.ajaxchimp.min.js"></script>
-			<script src="ub/js/jquery.magnific-popup.min.js"></script>	
- 			<script src="ub/js/jquery-ui.js"></script>			
-			<script src="ub/js/owl.carousel.min.js"></script>						
-			<script src="ub/js/jquery.nice-select.min.js"></script>							
-			<script src="ub/js/mail-script.js"></script>	
-			<script src="ub/js/main.js"></script>	
+  			<script src="pagina/ub/js/easing.min.js"></script>			
+			<script src="pagina/ub/js/hoverIntent.js"></script>
+			<script src="pagina/ub/js/superfish.min.js"></script>	
+			<script src="pagina/ub/js/jquery.ajaxchimp.min.js"></script>
+			<script src="pagina/ub/js/jquery.magnific-popup.min.js"></script>	
+ 			<script src="pagina/ub/js/jquery-ui.js"></script>			
+			<script src="pagina/ub/js/owl.carousel.min.js"></script>						
+			<script src="pagina/ub/js/jquery.nice-select.min.js"></script>							
+			<script src="pagina/ub/js/mail-script.js"></script>	
+			<script src="pagina/ub/js/main.js"></script>	
 	</body>
 </html>
 @stop
