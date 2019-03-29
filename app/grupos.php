@@ -1,17 +1,12 @@
 <?php
+ namespace App;
+ use Illuminate\Database\Eloquent\Model;
 
-namespace App;
+    class Grupos extends Model{
+        use SoftDeletes;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
+        protected $primaryKey = 'IdGrupo';
+        protected $fillable = ['IdGrupo','Grupo'];
 
-class grupos extends Model
-{
-    use SoftDeletes;
-
-    protected $table = 'grupos';
-    protected $primaryKey ='IdGrupo';
-    protected $fillable=['IdGrupo','Grupo','IdCurso'];
-
-    protected $data = ['deleted_at'];
-}
+        protected $data = ['deleted_at'];
+    }

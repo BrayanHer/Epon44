@@ -1,17 +1,12 @@
 <?php
+ namespace App;
+ use Illuminate\Database\Eloquent\Model;
 
-namespace App;
+    class StatusEstudiantes extends Model{
+        use SoftDeletes;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
+        protected $primaryKey = 'IdStatus';
+        protected $fillable = ['IdStatus','IdAlumno','IdTipoBaja','FechaBaja','Observacion'];
 
-class statusEstudiantes extends Model
-{
-    use SoftDeletes;
-
-    protected $table = 'statusestudiantes';
-    protected $primaryKey ='IdStatus';
-    protected $fillable=['IdStatus','IdMatricula','IdTipoBaja','FechaBaja','Observacion'];
-
-    protected $data = ['deleted_at'];
-}
+        protected $data = ['deleted_at'];
+    }

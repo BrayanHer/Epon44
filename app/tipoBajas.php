@@ -1,17 +1,10 @@
 <?php
+ namespace App;
+ use Illuminate\Database\Eloquent\Model;
 
-namespace App;
+    class TipoBajas extends Model{
+        protected $primaryKey = 'IdTipoBaja';
+        protected $fillable = ['IdTipoBaja','Tipo'];
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
-
-class tipoBajas extends Model
-{
-    use SoftDeletes;
-
-    protected $table = 'tipobajas';
-    protected $primaryKey ='IdTipoBajas';
-    protected $fillable=['IdTipoBajas','Tipo'];
-
-    protected $data = ['deleted_at'];
-}
+        protected $data = ['deleted_at'];
+    }

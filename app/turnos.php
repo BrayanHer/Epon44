@@ -1,17 +1,10 @@
 <?php
+ namespace App;
+ use Illuminate\Database\Eloquent\Model;
 
-namespace App;
+    class Turnos extends Model{
+        protected $primaryKey = 'IdTurno';
+        protected $fillable = ['IdTurno','Turno'];
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
-
-class turnos extends Model
-{
-    use SoftDeletes;
-
-    protected $table = 'turnos';
-    protected $primaryKey ='IdTurno';
-    protected $fillable=['IdTurnos','Turno','IdPeriodo'];
-
-    protected $data = ['deleted_at'];
-}
+        protected $data = ['deleted_at'];
+    }

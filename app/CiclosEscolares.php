@@ -2,11 +2,11 @@
  namespace App;
  use Illuminate\Database\Eloquent\Model;
 
-    class Materias extends Model{
+    class CiclosEscolares extends Model{
         use SoftDeletes;
 
-        protected $primaryKey = 'IdMateria';
-        protected $fillable = ['IdMateria','Materia'];
+        protected $primaryKey = 'IdCEs';
+        protected $fillable = ['IdCEs','Ciclo Escolar'];
 
         protected $data = ['deleted_at'];
     }
