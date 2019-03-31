@@ -52,7 +52,7 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
         <li class="menu-active"> <a href="{{route('apin')}}"> Inicio </a> </li>
-          <li> <a href="{{route('Servicios')}}"> Servicios y Tramites </a> </li><!--poner la vista respectiva con el codigo "('aqui va el nombre de la ruta')"-->
+          <li> <a href="{{route('Servicios')}}"> Servicios y Trámites </a> </li><!--poner la vista respectiva con el codigo "('aqui va el nombre de la ruta')"-->
           <li> <a href="{{route('Acerca')}}"> Acerca de la EPO No.44 </a> </li>
           <li> <a href="{{route('Vinculacion')}}"> Talleres y Actividades  </a> </li>
           <li> <a href="{{route('Ubicacion')}}"> Ubicación </a> </li>

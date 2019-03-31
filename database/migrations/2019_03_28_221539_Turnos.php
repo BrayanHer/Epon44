@@ -3,7 +3,6 @@
  use Illuminate\Database\Migrations\Migration;
 
     class Turnos extends Migration{
-        
         public function up(){
             Schema::create('turnos', function (Blueprint $table) {
                 $table->increments('IdTurno');

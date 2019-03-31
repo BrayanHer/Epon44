@@ -3,7 +3,6 @@
  use Illuminate\Database\Migrations\Migration;
 
     class CiclosEscolares extends Migration{
-        
         public function up(){
             Schema::create('ciclosEscolares', function (Blueprint $table) {
                 $table->increments('IdCEs');

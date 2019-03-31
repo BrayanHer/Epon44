@@ -3,7 +3,6 @@
  use Illuminate\Database\Migrations\Migration;
 
     class Editoriales extends Migration{
-        
         public function up(){
             Schema::create('editoriales', function (Blueprint $table) {
                 $table->increments('IdEditorial');

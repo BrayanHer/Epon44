@@ -3,7 +3,6 @@
  use Illuminate\Database\Migrations\Migration;
 
     class Tramites extends Migration{
-    
         public function up(){
             Schema::create('tramites', function (Blueprint $table) {
                 $table->increments('IdTramite');

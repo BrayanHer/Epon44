@@ -3,7 +3,6 @@
  use Illuminate\Database\Migrations\Migration;
 
     class Municipios extends Migration{
-        
         public function up(){
             Schema::create('municipios', function (Blueprint $table) {
                 $table->increments('IdMun');

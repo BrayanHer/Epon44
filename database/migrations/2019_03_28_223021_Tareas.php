@@ -1,32 +1,28 @@
 <?php
+ use Illuminate\Database\Schema\Blueprint;
+ use Illuminate\Database\Migrations\Migration;
 
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
+    class Tareas extends Migration{
+        public function up(){
+            Schema::create('tareas', function(Blueprint $table) {
+                $table->increments('IdTarea');
 
-class Tareas extends Migration
-{
-    public function up()
-    {
-        Schema::create('tareas', function(Blueprint $table) {
+                $table->integer('IdHTF')->unsigned();
+                $table->foreign('IdHTF')->references('IdHTF')->on('hTareasForos');
 
-            $table->increments('IdTarea');
+                $table->string('Tema',100);
+                $table->string('Descripcion',400);
 
-            $table->integer('IdHTF')->unsigned();
-            $table->foreign('IdHTF')->references('IdHTF')->on('hTareasForos');
+                $table->integer('IdCurso')->unsigned();
+                $table->foreign('IdCurso')->references('IdCurso')->on('cursos');
 
-            $table->string('Tema',100);
-            $table->string('Descripcion',400);
+                $table->rememberToken();
+                $table->timestamps(); 
+                $table->SoftDeletes();
+            });
+        }
 
-            $table->integer('IdCurso')->unsigned();
-            $table->foreign('IdCurso')->references('IdCurso')->on('cursos');
-
-            $table->rememberToken();
-            $table->timestamps(); 
-            $table->SoftDeletes();
-        });
+        public function down(){
+            Schema::drop('tareas');
+        }
     }
-
-    public function down(){
-        Schema::drop('tareas');
-    }
-}

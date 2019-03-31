@@ -3,7 +3,6 @@
  use Illuminate\Database\Migrations\Migration;
 
     class TipoBajas extends Migration{
-    
         public function up(){
             Schema::create('tipoBajas', function (Blueprint $table) {
                 $table->increments('IdTipoBaja');

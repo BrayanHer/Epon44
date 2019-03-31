@@ -6,7 +6,7 @@
         use SoftDeletes;
 
         protected $primaryKey = 'IdMateria';
-        protected $fillable = ['IdMateria','Materia'];
+        protected $fillable = ['IdMateria','Materia','IdPeriodo'];
 
         protected $data = ['deleted_at'];
     }

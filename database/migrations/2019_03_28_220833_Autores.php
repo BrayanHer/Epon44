@@ -3,7 +3,6 @@
  use Illuminate\Database\Migrations\Migration;
 
     class Autores extends Migration{
-        
         public function up(){
             Schema::create('autores', function (Blueprint $table) {
                 $table->increments('IdAutor');

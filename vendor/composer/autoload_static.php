@@ -812,6 +812,7 @@ class ComposerStaticInit609c0e6512dba38045ef5b9526b2a0c5
         'TipoBajas' => __DIR__ . '/../..' . '/database/migrations/2019_03_28_220932_TipoBajas.php',
         'Tramites' => __DIR__ . '/../..' . '/database/migrations/2019_03_28_221001_Tramites.php',
         'Turnos' => __DIR__ . '/../..' . '/database/migrations/2019_03_28_221539_Turnos.php',
+        'Usuarios' => __DIR__ . '/../..' . '/database/migrations/2019_03_31_083015_Usuarios.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

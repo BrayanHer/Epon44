@@ -14,13 +14,7 @@
             });
         }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::drop('periodos');
+        public function down(){
+            Schema::drop('periodos');
+        }
     }
-}

@@ -1,32 +1,24 @@
 <?php
+ use Illuminate\Database\Schema\Blueprint;
+ use Illuminate\Database\Migrations\Migration;
 
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
+    class Examenes extends Migration{
+        public function up(){
+            Schema::create('examenes', function (Blueprint $table) {
+                $table->increments('IdExam');
+                
+                $table->integer('IdCurso')->unsigned();
+                $table->foreign('IdCurso')->references('IdCurso')->on('cursos');
 
-class Examenes extends Migration
-{
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('examenes', function (Blueprint $table) {
-            $table->increments('IdExam');
+                $table->string('Archivo',100);
             
-            $table->integer('IdCurso')->unsigned();
-            $table->foreign('IdCurso')->references('IdCurso')->on('cursos');
+                $table->rememberToken();
+                $table->timestamps();
+                $table->SoftDeletes();
+            });
+        }
 
-            $table->string('Archivo',100);
-        
-            $table->rememberToken();
-            $table->timestamps();
-            $table->SoftDeletes();
-        });
+        public function down(){
+            Schema::drop('examenes');
+        }
     }
-
-    public function down(){
-        Schema::drop('examenes');
-    }
-}

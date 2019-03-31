@@ -1,11 +1,9 @@
-
 <html>
     <head>
         <!-- meta character set -->
         <meta charset="utf-8">
         <!-- Always force latest IE rendering engine or request Chrome Frame -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Blue One Page HTML Template</title>      
         <!-- Meta Description -->
         <meta name="description" content="Blue One Page Creative HTML5 Template">
         <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
@@ -73,7 +71,7 @@
                         <div class="bg-img bg-img-2"></div>
                         <div class="slide-caption">
                             <div class="caption-content">
-                                <h2>Quieres conocer mas sobre nosostros </h2>
+                                <h2>Conocer más sobre nosostros </h2>
                                 <span>Envianos un correo con tus dudas</span>
                                 <a href="{{route('Ubicacion')}}" class="btn btn-blue btn-effect">Contactos</a>
                             </div>

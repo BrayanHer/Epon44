@@ -555,4 +555,5 @@ return array(
     'TipoBajas' => $baseDir . '/database/migrations/2019_03_28_220932_TipoBajas.php',
     'Tramites' => $baseDir . '/database/migrations/2019_03_28_221001_Tramites.php',
     'Turnos' => $baseDir . '/database/migrations/2019_03_28_221539_Turnos.php',
+    'Usuarios' => $baseDir . '/database/migrations/2019_03_31_083015_Usuarios.php',
 );
