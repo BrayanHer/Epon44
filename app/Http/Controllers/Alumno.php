@@ -7,7 +7,7 @@ use App\Http\Requests;
 use App\alumnos;
 use App\municipios;
 use App\localidades;
-use App\usuarios;
+use App\Usuarios;
 use Session;
 
 
@@ -140,7 +140,7 @@ class Alumno extends Controller
 // dd($Per->Celular=$request->Celular);
 			$Per->save();
 
-			$login = new usuarios;
+			$login = new Usuarios;
 			$login->nombre=$User_name;
 			$login->correo=$request->Email;
 			$login->usuario=$request->Nombre;

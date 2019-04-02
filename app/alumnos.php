@@ -2,7 +2,7 @@
  namespace App;
  use Illuminate\Database\Eloquent\Model;
 
-    class Alumnos extends Model{
+    class alumnos extends Model{
         use SoftDeletes;
 
         protected $primaryKey = 'IdMatricula';

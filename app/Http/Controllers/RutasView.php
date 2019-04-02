@@ -95,5 +95,8 @@
         public function RegistroE(){
             return view('Maestros.RegistroE');
         }
+        public function TareasD(){
+            return view('Maestros.Tareas');
+        }
         
     }

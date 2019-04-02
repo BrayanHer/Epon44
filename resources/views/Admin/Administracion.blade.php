@@ -22,6 +22,8 @@ hr{
     <hr color="black" size=1>
     <a href="{{route('Maestros')}}" class="card-link"><i class="fa fa-plus"></i>&nbsp;Nuevo Registro</a>
     <a href="{{route('C_Maestros')}}" class="card-link">Registros</a>
+    <a href="{{route('Listas')}}" class="card-link"> Listas de Grupos</a>
+
   </div>
 </div>
 
@@ -49,6 +51,19 @@ hr{
     <hr color="black" size=1>
     <a href="#" class="card-link">Administradores</a>
     <a href="#" class="card-link">Directivos</a>
+    <a href="{{route('Listas')}}" class="card-link"> Asignar Materias</a>
+  </div>
+</div>
+
+<div class="card text-white bg-dark mb-3" style="width: 32rem;" >
+  <div class="card-body">
+    <h5 class="card-title"><i class="fa fa-globe" aria-hidden="true"></i>
+&nbsp;Pagina Web</h5>
+    <hr color="black" size=1>
+    <a href="#" class="card-link"><i class="fa fa-cog" aria-hidden="true"></i>
+Servicios Y Tramites</a>
+    <a href="#" class="card-link"><i class="fa fa-cog" aria-hidden="true"></i>
+Talleres y Actividadess</a>
     <a href="#" class="card-link"></a>
   </div>
 </div>

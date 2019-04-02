@@ -1,10 +1,16 @@
 <?php
- namespace App;
- use Illuminate\Database\Eloquent\Model;
 
-    class Usuarios extends Model{
-        protected $primaryKey = 'idu';
-        protected $fillable = ['idu','nombre','correo','usuario','password','tipo','Registro'];
+namespace App;
 
-        protected $data = ['deleted_at'];
-    }
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+class Usuarios extends Model
+{
+   use SoftDeletes;
+
+   protected $table = 'usuarios';
+   protected $primaryKey = 'idu';
+   protected $fillable=['idu','nombre','correo','usuario','password','tipo'];
+   
+   protected $date=['delete_at'];
+}

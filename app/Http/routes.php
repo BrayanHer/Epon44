@@ -25,6 +25,7 @@ Route::get('/Listas','RutasView@S_Listas')->name('Listas');
 Route::get('/A_Materias','RutasView@A_Materias')->name('A_Materias');
 Route::get('/RegistroE','RutasView@RegistroE')->name('RegistroE');
 Route::get('/RegistroP','RutasView@RegistroP')->name('RegistroP');
+Route::get('/TareasD','RutasView@TareasD')->name('TareasD');
 
 
 

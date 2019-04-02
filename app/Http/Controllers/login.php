@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use App\usuarios;
+use App\Usuarios;
 use Session;
 
 class login extends Controller
@@ -18,7 +18,7 @@ class login extends Controller
    {
 	   $usuario  = $request->usuario;
 	   $passw    = $request->password;
-	   $consulta = usuarios::withTrashed()->where('usuario','=',$usuario)
+	   $consulta = Usuarios::withTrashed()->where('usuario','=',$usuario)
 	                         ->where ('password','=',$passw)
 							 ->get();
 
