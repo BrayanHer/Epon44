@@ -24,7 +24,7 @@
             <div class="row">
                 
                     <div class="page-title">
-                        <h2>Pago por Tramites</h2>
+                        <h2>Pago por Trámites</h2>
                     </div>
               
             </div>

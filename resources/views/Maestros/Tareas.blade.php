@@ -48,7 +48,7 @@
                               <div class="container">
                               <div class="row" align="center">
                                     <div class="form-group col-xl-12">
-									<strong for="ejemplo_email_1"> Selccione el Grupo</strong><br>
+									<strong for="ejemplo_email_1"> Seleccione el Grupo</strong><br>
 									<input type="checkbox" class="inlineRadio1" id="SelGrupo" name="SelGrupo">&nbsp;1°-1&nbsp;
                                     <input type="checkbox" class="inlineRadio1" id="SelGrupo" name="SelGrupo">&nbsp;1°-2&nbsp;
                                     <input type="checkbox" class="inlineRadio1" id="SelGrupo" name="SelGrupo">&nbsp;1°-3&nbsp;
@@ -80,12 +80,12 @@
 									<input type="text" class="form-control" id="IdLibro" name="IdLibro">
                                     </div>
                                     <div class="form-group col-xl-11">
-                                    <strong  id="cen"> Descripcion de la Tarea </strong>
+                                    <strong  id="cen"> Descripción de la Tarea </strong>
                             <textarea class="form-control"></textarea>
                             </div>
                             <div class="form-group col-xl-11">
                             <strong class="col-xl-10" id="cen"> Nombre de la Tarea </strong><br>
-                            <input type="radio" name="gender" value="TF"> Tarea Fisica<br>
+                            <input type="radio" name="gender" value="TF"> Tarea Física<br>
                             <input type="radio" name="gender" value="TD"> Tarea Digital
                             </div>
                         </div>

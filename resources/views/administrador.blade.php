@@ -51,7 +51,7 @@
               <a href="#">Tareas</a>
             </li>
             <li>
-              <a href="{{route('Planeacion')}}">Planeacion y Examenes</a>
+              <a href="{{route('Planeacion')}}">Planeación y Exámenes</a>
             </li>
           </ul>
         </li>
@@ -104,7 +104,7 @@
               <a href="{{route('AltasE')}}">Editoriales</a>
             </li>
             <li>
-              <a href="{{route('AltasC')}}">Categorias</a>
+              <a href="{{route('AltasC')}}">Categorías</a>
             </li>
           </ul>
   @endif
@@ -118,7 +118,7 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseAdmin">
             <li>
-              <a href="{{route('Administracion')}}">Configuracion General</a>
+              <a href="{{route('Administracion')}}">Configuración General</a>
             </li>
             <li>
               <a href="{{route('Listas')}}">Listas de Grupos</a>

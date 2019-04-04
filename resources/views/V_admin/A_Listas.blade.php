@@ -54,7 +54,7 @@
 
                           
 
-                             <label for="ejemplo_email_1"> Periodo del semestre </label>
+                             <label for="ejemplo_email_1"> Período del semestre </label>
 									<select class="form-control col-xl-12" name='IdEditorial'>
 											<option value='1'> Agosto - Febrero</option>
 											<option value='2'> Febrero - Julio</option>

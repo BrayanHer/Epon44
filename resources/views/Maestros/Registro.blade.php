@@ -85,7 +85,7 @@
 @if($errors->first('matricula')) 
 <small> {{ $errors->first('matricula') }} </small> <br>
 @endif
-				<label for="ejemplo_email_1">Matricula</label>
+				<label for="ejemplo_email_1">Matrícula</label>
 				<input type="text" class="form-control" id="matricula" name="matricula"
 					placeholder="Introduce su Apellido Paterno">
 			</div>

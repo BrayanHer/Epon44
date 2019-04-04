@@ -5,12 +5,12 @@
  use App\Http\Requests;
  use App\Http\Controllers\Controller;
 
- use App\libros;
- use App\autores;
- use App\editoriales;
- use App\categorias;
- use App\prestamoLibros;
- use App\alumnos;
+ use App\Libros;
+ use App\Autores;
+ use App\Editoriales;
+ use App\Categorias;
+ use App\PrestamoLibros;
+ use App\Alumnos;
  use Session;
 
     class PrestamoLibro extends Controller

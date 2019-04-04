@@ -3,25 +3,25 @@
 
 @stop
 
-periodo de semestre:<select name="" id="">
+Período de semestre:<select name="" id="">
 <option value="1">Agosto-febrero</option>
 <option value="2">Febrero-julio</option>
 </select>
 
 
 
-1.- ciclo escolar
-2.- periodo del semestre
-3.- turno
-4.- grupo
-5.-archivo
-6.-guardar /cancelar
+1.- Ciclo escolar
+2.- Período del semestre
+3.- Turno
+4.- Grupo
+5.- Archivo
+6.- Guardar / Cancelar
 
 |--------------------------------|
-  Matutino     °     vespetirno
+  Matutino     °     Vespetirno
 |_________________________________|
 
->primero semestre---------------------------------------
+>Primer Semestre---------------------------------------
 
 
 

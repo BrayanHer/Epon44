@@ -24,7 +24,7 @@ overflow-y: auto;
                         
                             <a class="btn btn-info" data-toggle="collapse" href="#Examenes" role="button" aria-expanded="false" aria-controls="Examenes">
                             <i class="fa fa-fw fa-plus"></i>
-                                Examenes
+                                Exámenes
                             </a>
                         </p>
                             <div class="collapse" id="Examenes">
@@ -43,7 +43,7 @@ overflow-y: auto;
                                             <div>
                                                 <label for="ejemplo_email_1"> Tipo de actividad: </label>
                                                     <select class="form-control" name=''>
-                                                        <option value=''>Examenes</option>					
+                                                        <option value=''>Exámenes</option>					
                                                         <option value=''>Planeación</option>
                                                     </select><br>
                                             </div>
@@ -63,7 +63,7 @@ overflow-y: auto;
     <p>
             <a class="btn btn-info" data-toggle="collapse" href="#RegistroE" role="button" aria-expanded="false" aria-controls="RegistroE">
             <i class="fa fa-list" aria-hidden="true"></i>
-                Registro de examenes
+                Registro de exámenes
             </a>
         </p>
             <div class="collapse" id="RegistroE">
@@ -85,7 +85,7 @@ overflow-y: auto;
     <tr>
       <th scope="row">11-Enero-2019</th>
       <td>2018 - 2019</td>
-      <td>Civica - Primero-1</td>
+      <td>Cívica - Primero-1</td>
       <td>MMMMM</td>
     </tr>
     

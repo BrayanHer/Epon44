@@ -51,17 +51,17 @@ hr{
     <hr color="black" size=1>
     <a href="#" class="card-link">Administradores</a>
     <a href="#" class="card-link">Directivos</a>
-    <a href="{{route('Listas')}}" class="card-link"> Asignar Materias</a>
+    <a href="{{route('A_Materias')}}" class="card-link"> Materias</a>
   </div>
 </div>
 
 <div class="card text-white bg-dark mb-3" style="width: 32rem;" >
   <div class="card-body">
     <h5 class="card-title"><i class="fa fa-globe" aria-hidden="true"></i>
-&nbsp;Pagina Web</h5>
+&nbsp;Página Web</h5>
     <hr color="black" size=1>
     <a href="#" class="card-link"><i class="fa fa-cog" aria-hidden="true"></i>
-Servicios Y Tramites</a>
+Servicios Y Trámites</a>
     <a href="#" class="card-link"><i class="fa fa-cog" aria-hidden="true"></i>
 Talleres y Actividadess</a>
     <a href="#" class="card-link"></a>

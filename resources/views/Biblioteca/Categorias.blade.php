@@ -68,7 +68,7 @@
 				<thead align="center" class="thead-dark col-md-10">
 					<tr>
 						<th scope="col-md-10">Clave</th>
-						<th scope="col-md-10">Categoria</th>
+						<th scope="col-md-10">Categoría</th>
 						<th colspan="2" scope="col-md-10"><i class="fa fa-angle-down"></i> &nbsp;Opciones</th>
 					</tr>
 				</thead>

@@ -45,7 +45,7 @@
           <div class="col-lg-6">
               <span class="caption">
                 <span class="caption-content"> 
-                  <p  id="tcol"class="mb-2" align="justify">Si cumples con los requisito, aplica para la beca.. ¡NO TE QUEDES AFUERA!</p>
+                  <p  id="tcol"class="mb-2" align="justify">Si cumples con los requisito, aplicá para la beca.. ¡NO TE QUEDES AFUERA!</p>
                 </span>
               </span>
 

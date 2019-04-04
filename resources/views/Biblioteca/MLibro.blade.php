@@ -46,7 +46,7 @@
 			</div>
 
 			<div class="form-group col-xl-3">
-				<label for="ejemplo_email_1"> Categoria </label>
+				<label for="ejemplo_email_1"> Categoría </label>
 				<select class="form-control" name='IdCategoria'>
 						<option value='{{$IdCategoria}}'>{{$Categoria}}</option>
 						@foreach($Categorias as $ca)

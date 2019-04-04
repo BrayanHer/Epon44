@@ -80,10 +80,10 @@
 										</div>
 									</div>
 
-								<label for="ejemplo_email_1"> Categoria </label>
+								<label for="ejemplo_email_1"> Categoría </label>
 									<select class="form-control col-xl-12" name='IdEditorial'>
 										@foreach($Categorias as $ca)
-											<option> Seleccione una Categoria </option>
+											<option> Seleccione una Categoría </option>
 											<option value='{{$ca->IdCategoria}}'>{{$ca->Categoria}} </option>
 										@endforeach
 									</select>
@@ -113,12 +113,12 @@
 				<thead align="center" class="thead-dark col-md-10">
 					<tr>
 						<th scope="col-md-10">Clave</th>
-			 			<th scope="col-md-10">Titulo</th>
+			 			<th scope="col-md-10">Título</th>
                         <th scope="col-md-10">Autor</th>
 						<th scope="col-md-10">Editorial</th>
 						<th scope="col-md-10">Edición</th>
 						<th scope="col-md-10">Año de Publicación</th>
-						<th scope="col-md-10">Categoria</th>			
+						<th scope="col-md-10">Categoría</th>			
 						<th colspan="2" scope="col-md-10"><i class="fa fa-angle-down"></i> &nbsp;Opciones</th>
 					</tr>
 				</thead>

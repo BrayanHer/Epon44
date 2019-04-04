@@ -42,7 +42,7 @@ a:hover {
         <div class="content-section-heading">
           <h3 class="text-secondary mb-0"></h3>
           <h2 class="mb-5"></h2>
-          <h2 class="mb-5">Servicios y Tramites</h2>
+          <h2 class="mb-5">Servicios y Trámites</h2>
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
@@ -85,7 +85,7 @@ a:hover {
         <hr style="background-color:white;">
         <br>
         <h4>
-              <strong>Informacion para la Pre-Inscripción</strong>
+              <strong>Información para la Pre-Inscripción</strong>
             </h4>
 <section>
 
@@ -99,22 +99,22 @@ a:hover {
     <tr>
       <th scope="row">
 
-<p align="center">¿Que tengo que hacer?</p>
+<p align="center">¿Qué tengo que hacer?</p>
 <p align="left">
-El Aspirante debera Pre-Registrarse del 1 al 22 de febrero de 2019 de acuerdo 
+El Aspirante deberá Pre-Registrarse del 1 al 22 de febrero de 2019 de acuerdo 
 a la primera letra de su CURP en las fechas señaladas en la convocatoria
-en la pagina del gobierno del Estado de México.
+en la página del gobierno del Estado de México.
 <a href="https://ingresoms.edugem.gob.mx">https://ingresoms.edugem.gob.mx</a>
 </p>
 <p align="left"><strong>En esta página podrás obtener la solicitud de pre-registro y tu comprobante</strong></p>
 <p align="left">
-A) La Información para el pre-registro tendrá que ser recopilada con la asesoria de
-tu arientador educativo, padre o tutor</p>
+A) La Información para el pre-registro tendrá que ser recopilada con la asesoría de
+tu orientador educativo, padre o tutor</p>
 <p align="left">
-B) Es de suma importancia requisitar el estudio socieconomico, ya que es paso 
+B) Es de suma importancia requisitar el estudio socioeconómico, ya que es paso 
 importante para el pre-registro</p>
 <p align="left">
-C) Contestar la encuesta de CENEVAL en linea (se solicita durante el proceso de pre-registro).
+C) Contestar la encuesta de CENEVAL en línea (se solicita durante el proceso de pre-registro).
  Es requisito importante para el registro.</p>
  <p align="left">
 D) Imprimir tu comprobante de Pre-registro y recuperar las firmas que se solicitan en el mismo</p>

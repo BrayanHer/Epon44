@@ -23,7 +23,7 @@
 						<th scope="col-md-10">Clave</th>
 						<th scope="col-md-10">Nombre del Profesor</th>
 						<th scope="col-md-10">Correo</th>
-						<th scope="col-md-10">Matricula</th>
+						<th scope="col-md-10">Matrícula</th>
 						<th colspan="2" scope="col-md-10"><i class="fa fa-angle-down"></i> &nbsp;Opciones</th>
 					</tr>
 				</thead>

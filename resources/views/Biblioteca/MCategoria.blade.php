@@ -17,7 +17,7 @@
 			<i> {{$errors->first('Categoria')}} </i> 
 		@endif	
 		<div class="form-group col-xl-12">
-			<label for="ejemplo_email_1"> Categoria </label>
+			<label for="ejemplo_email_1"> Categoría </label>
 			<input type="text" class="form-control" id="Categoria" name="Categoria" value="{{$categoria->Categoria}}" >
 		</div>
     <div>				

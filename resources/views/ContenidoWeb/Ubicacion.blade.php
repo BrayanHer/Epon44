@@ -57,7 +57,7 @@
 								<span class="lnr lnr-user"></span>
 							</div>
 							<div class="contact-details">
-								<h5> Telefono de la Institución</h5>
+								<h5> Teléfono de la Institución</h5>
 								<p>01(712)265-2075</p>
 							</div>
 						</div>
@@ -66,7 +66,7 @@
 								<span class="lnr lnr-user"></span>
 							</div>
 							<div class="contact-details">
-								<h5>Correo Electronico</h5>
+								<h5>Correo Electrónico</h5>
 								<p> Preparatoria_oficial@EPO44.org </p>
 							</div>
 						</div>														

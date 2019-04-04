@@ -5,10 +5,10 @@
  use App\Http\Requests;
  use App\Http\Controllers\Controller;
 
- use App\libros;
- use App\autores;
- use App\editoriales;
- use App\categorias;
+ use App\Libros;
+ use App\Autores;
+ use App\Editoriales;
+ use App\Categorias;
  use Session;
  
     class Libro extends Controller
@@ -33,7 +33,7 @@
             //Consulta
                 //$Libros = libros::withTrashed()->orderBy('IdLibro', 'asc') //withTrashed -> todos ->eliminados (lógico) o no
                                                         // ->get();
-                $Libros =\DB::select("SELECT l.IdLibro, l.Titulo, CONCAT(a.Nombre,' ',a.APaterno,' ',a.AMaterno) AS 'Autor' , e.Editorial, c.Categoria, l.Edicion, l.AnoPublicacion, l.deleted_at
+                $Libros =\DB::select("SELECT l.IdLibro, l.Titulo, CONCAT(a.Nombre,' ',a.APaterno,' ',a.AMaterno) AS 'Autor' , e.Editorial, c.Categoria, l.Edicion, l.AnioPublicacion, l.Imagen, l.Existencia, l.deleted_at
 
 FROM libros AS l
                 INNER JOIN editoriales AS e ON e.IdEditorial = l.IdEditorial

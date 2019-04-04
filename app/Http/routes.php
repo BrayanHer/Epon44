@@ -127,3 +127,7 @@ Route::get('/Des_Maestro/{IdMaestro}','Maestro@Des_Maestro')->name('Des_Maestro'
 Route::get('/Act_Maestro/{IdMaestro}','Maestro@Act_Maestro')->name('Act_Maestro');
         //Eliminación Física
 Route::get('/Del_Categoria/{IdMaestro}','Maestro@Del_Categoria')->name('Del_Categoria');
+
+
+//Materias
+Route::get('/GMateria','Materia@GMateria')->name('GMateria');

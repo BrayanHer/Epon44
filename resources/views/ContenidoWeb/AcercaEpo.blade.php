@@ -43,12 +43,12 @@
 						<div class="col-md-6">
 							<p align="justify">La Escuela Preparatoria Oficial Núm.44 inicia sus labores en el año 1989, con 67 alumnos, el trabajo de esta escuela del nivel medio superior se inicia en un edificio de apenas 3 aulas, un espacio para el servicio de orientación 
 							y el área administrativa, alumnos en ese entonces provenientes de las comunidades aledañas a esta cabecera municipal bajo la dirección del profesor Manuel Rangel Domínguez, posteriormente en 1991 continúa su marcha guiada por el Profesor Primitivo 
-							Hinojosa y es en el ciclo escolar 1992-1993, periodo en el que el Profesor Roberto Ruíz Estrada dirige el camino de 116 alumnos, motivado por el interés de consolidar un plantel de calidad, ha logrado elevar a más de 994 alumnos. Ahora en un edificio escolar de 20 aulas escolares. 1 área administrativa , un laboratorio de usos múltiples, 1 centro de cómputo con 40 equipos, todos ellos con servicio de internet, una biblioteca escolar con más de 3,000 volúmenes especializados, sala de proyecciones, servicio de orientación y espacios modulados de áreas verdes sin faltar también canchas deportivas.
+							Hinojosa y es en el ciclo escolar 1992-1993, periodo en el que el Profesor Roberto Ruíz Estrada dirige el camino de 116 alumnos, motivado por el interés de consolidar un plantel de calidad, ha logrado elevar a más de 994 alumnos. Ahora en un edificio escolar de 20 aulas escolares. Un área administrativa , un laboratorio de usos múltiples, un centro de cómputo con 40 equipos, todos ellos con servicio de internet, una biblioteca escolar con más de 3,000 volúmenes especializados, sala de proyecciones, servicio de orientación y espacios modulados de áreas verdes sin faltar también canchas deportivas.
 							</p>
 						</div>
 						<div class="col-md-6">
 							<p align="justify">
-							Lograr la consolidación institucional  con docentes de calidad y alumnos con un alto nivel de competitividad”, ha sido el lema de nuestra escuela tiene la encomienda 40 profesores del Turno Vespertino y 46 del Turno Matutino que se desempeñan en las aulas escolares ,11 orientadores, personal administrativo atinada del Profesor Roberto Ruíz Estrada, su actual Director.
+							Lograr la consolidación institucional con docentes de calidad y alumnos con un alto nivel de competitividad, ha sido el lema de nuestra escuela tiene la encomienda 40 profesores del Turno Vespertino y 46 del Turno Matutino que se desempeñan en las aulas escolares ,11 orientadores, personal administrativo atinada del Profesor Roberto Ruíz Estrada, su actual Director.
 							 
 							La participación de la Escuela Preparatoria Oficial Núm. 44 en eventos deportivos, concursos de Oratoria, de Ciencia y Tecnología en donde han logrado destacados primeros lugares a nivel estado, esto ha permitido que el municipio de Temoaya se ubique en un sitio preponderante dentro del ámbito educativo, la modalidad de bachillerato único ha abierto las puertas a los alumnos de las diferentes instituciones del nivel superior desde facultades universitarias, tecnológicos, escuelas normales, escuelas militares entre otras: los jóvenes egresados de las diferentes facultades son testimonio fiel de la preocupación de las autoridades municipales y educativas de que la escuela preparatoria oficial núm.44 haga historia en nuestro estado. 
 							</p>
@@ -78,7 +78,7 @@
 						<div class="ts-item">
 							<h4>Visión</h4>
 							<p align="justify">En la Escuela Preparatoria Oficial No. 44, se consolidará como la Institución de Educación
-							Media Superior de Bachillerato General del GEM, con mas reconocimiento en el municipio de Temoaya y a la comunidad que la constituye convivirá en un marco de armonía, compromiso y respeto a los derechos de sus integrantes en un espacio adecuado desarrollo escolar</p>
+							Media Superior de Bachillerato General del GEM, con más reconocimiento en el municipio de Temoaya y a la comunidad que la constituye convivirá en un marco de armonía, compromiso y respeto a los derechos de sus integrantes en un espacio adecuado desarrollo escolar</p>
 						</div>
 						<div class="ts-item">
 							<h4>Valores</h4>

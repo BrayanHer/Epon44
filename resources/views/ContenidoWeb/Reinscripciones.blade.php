@@ -60,7 +60,7 @@
                             <li type="disc">Certificado de salud que especifique problemas de alergias, ingesta de medicamentos u otro problema de salud.</li>
                             <li type="disc">6 fotografías tamaño infantil, blanco y negro (recientes e iguales)</li>
                             <li type="disc">Cubrir la cuota de inscripción semestral $866.00 </li>
-                            <li type="disc">La ficha de depósito original deberá presentarse en el área de canje de la escuela en original y copia, anotándole nombre del alumno, Núm.. De Matricula, grado, grupo y turno. Este se cambiara por el recibo oficial de la escuela.</li>
+                            <li type="disc">La ficha de depósito original deberá presentarse en el área de canje de la escuela en original y copia, anotándole nombre del alumno, Núm. De Matricula, grado, grupo y turno. Este se cambiara por el recibo oficial de la escuela.</li>
                         </div>
                         </div>
                     </div>

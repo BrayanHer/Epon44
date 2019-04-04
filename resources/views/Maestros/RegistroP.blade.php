@@ -5,7 +5,7 @@
       <th scope="col">Fecha</th>
       <th scope="col">Semestre</th>
       <th scope="col">Ciclo Escolar</th>
-      <th scope="col">Archivo de Examenes</th>
+      <th scope="col">Archivo de Exámenes</th>
     </tr>
   </thead>
   <tbody>
