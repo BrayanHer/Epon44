@@ -70,7 +70,6 @@
 						<th scope="col-md-10">Clave</th>
 						<th scope="col-md-10">Editorial</th>
 						<th colspan="2" scope="col-md-10"><i class="fa fa-angle-down"></i> &nbsp;Opciones</th>
-
 					</tr>
 				</thead>
 				@foreach($Editoriales as $ed)
