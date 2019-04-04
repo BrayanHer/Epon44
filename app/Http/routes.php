@@ -25,7 +25,7 @@ Route::get('/Listas','RutasView@S_Listas')->name('Listas');
 Route::get('/A_Materias','RutasView@A_Materias')->name('A_Materias');
 Route::get('/RegistroE','RutasView@RegistroE')->name('RegistroE');
 Route::get('/RegistroP','RutasView@RegistroP')->name('RegistroP');
-Route::get('/TareasD','RutasView@TareasD')->name('TareasD');
+//Route::get('/TareasD','RutasView@TareasD')->name('TareasD');
 
 
 
@@ -127,3 +127,6 @@ Route::get('/Des_Maestro/{IdMaestro}','Maestro@Des_Maestro')->name('Des_Maestro'
 Route::get('/Act_Maestro/{IdMaestro}','Maestro@Act_Maestro')->name('Act_Maestro');
         //Eliminación Física
 Route::get('/Del_Categoria/{IdMaestro}','Maestro@Del_Categoria')->name('Del_Categoria');
+
+// Tareas
+Route::get('/TareasD','Tarea@TareasD')->name('TareasD');

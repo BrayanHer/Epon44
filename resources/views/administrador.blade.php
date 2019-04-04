@@ -48,7 +48,7 @@
               <a href="#">Estudiantes</a>
             </li>
             <li>
-              <a href="#">Tareas</a>
+              <a href="{{route('TareasD')}}">Tareas</a>
             </li>
             <li>
               <a href="{{route('Planeacion')}}">Planeacion y Examenes</a>

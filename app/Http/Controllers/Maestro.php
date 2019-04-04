@@ -115,6 +115,7 @@ public function Del_Categoria($IdMaestro){
     maestros::withTrashed()->where('IdMaestro',$IdMaestro)->forceDelete();
     return redirect()->back();
 }
+
     
 }
 
