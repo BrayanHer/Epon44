@@ -28,7 +28,7 @@
                 $table->SoftDeletes();
             });
         }
-        
+
         public function down(){
             Schema::drop('libros');
         }

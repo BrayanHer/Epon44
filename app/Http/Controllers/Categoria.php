@@ -8,20 +8,20 @@
  use App\categorias;
  use Session;
 
-    class Categoria extends Controller
-    {
+    class Categoria extends Controller    {
     //Alta
         public function AltasC(){
             $clavequesigue = categorias::withTrashed()->orderBy('IdCategoria', 'desc')
-                                                    ->take(1)
-                                                    ->get();
+                                                        ->take(1)
+                                                        ->get();
                 if(count($clavequesigue)==0){
                     $IdCategoria = 1;
                 }
                 else{
                     $IdCategoria = $clavequesigue[0]->IdCategoria + 1;
                 }
-        //Consulta
+                
+    //Consulta
                 $Categorias = categorias::withTrashed()->orderBy('IdCategoria', 'asc')
                                                          ->get();
 

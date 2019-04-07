@@ -36,15 +36,15 @@
 									<input type="text" class="form-control" id="IdPrestamo" name="IdPrestamo" value="{{$IdPrestamo}}" readonly='readonly'>
 								</div>
 		        
-								@if($errors->first('IdMatricula')) 
-									<i> {{$errors->first('IdMatricula')}} </i> 
+								@if($errors->first('IdAlumno')) 
+									<i> {{$errors->first('IdAlumno')}} </i> 
 								@endif	
 								<div class="form-group col-xl-12">
 									<label for="ejemplo_email_1"> Matrícula </label>
-            							<select class="form-control" name='IdMatricula'>
+            							<select class="form-control" name='IdAlumno'>
 											@foreach($Alumnos as $al)
 												<option> Seleccione una Matrícula </option>
-												<option value='{{$al->IdMatricula}}'>{{$al->IdMatricula}} </option>
+												<option value='{{$al->IdAlumno}}'>{{$al->Matricula}} </option>
 											@endforeach
 										</select>
 								</div>

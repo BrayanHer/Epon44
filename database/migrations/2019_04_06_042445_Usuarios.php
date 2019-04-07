@@ -20,6 +20,6 @@
         }
 
         public function down(){
-                Schema::drop('usuarios');
+            Schema::drop('usuarios');
         }
     }

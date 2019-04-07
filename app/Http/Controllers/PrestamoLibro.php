@@ -5,12 +5,12 @@
  use App\Http\Requests;
  use App\Http\Controllers\Controller;
 
- use App\Libros;
- use App\Autores;
- use App\Editoriales;
- use App\Categorias;
- use App\PrestamoLibros;
- use App\Alumnos;
+ use App\libros;
+ use App\autores;
+ use App\editoriales;
+ use App\categorias;
+ use App\prestamoLibros;
+ use App\alumnos;
  use Session;
 
     class PrestamoLibro extends Controller
@@ -28,13 +28,13 @@
                 }
                 $Libros = libros::withTrashed()->orderBy('Titulo')
                                                     ->get();
-                $Alumnos = alumnos::withTrashed()->orderBy('IdMatricula')
+                $Alumnos = alumnos::withTrashed()->orderBy('IdAlumno')
                                           ->get();
             
              //Consulta
-                $Prestamo =\DB::select("SELECT p.IdPrestamo, CONCAT(a.IdMatricula,' - ',a.Nombre,' ',a.APaterno,' ',a.AMaterno) AS 'Alumno' , l.Titulo, p.FechaPrestamo, p.FechaEntrega, p.deleted_at
+                $Prestamo =\DB::select("SELECT p.IdPrestamo, CONCAT(a.Matricula,' - ',a.Nombre,' ',a.APaterno,' ',a.AMaterno) AS 'Alumno' , l.Titulo, p.FechaPrestamo, p.FechaEntrega, p.deleted_at
                 FROM prestamoLibros AS p
-                INNER JOIN alumnos AS a ON a.IdMatricula = p.IdMatricula
+                INNER JOIN alumnos AS a ON a.IdAlumno = p.IdAlumno
                 INNER JOIN libros AS l ON l.IdLibro = p.IdLibro");
 
 
@@ -54,14 +54,14 @@ return view ("Biblioteca.PrestamoLibros")
        
             public function GPrestamos(Request $request){
                 $IdPrestamo=$request->IdPrestamo;        
-                $IdMatricula=$request->IdMatricula;
+                $IdAlumno=$request->IdAlumno;
                 $IdLibro=$request->IdLibro;        
                 $FechaPrestamo=$request->FechaPrestamo;
                 $FechaEntrega=$request->FechaEntrega;
                     
                 $this->validate($request,[
                     'IdPrestamo'   => 'required|numeric',
-                    'IdMatricula'    =>'required|numeric',
+                    'IdAlumno'    =>'required|numeric',
                     'IdLibro'   => 'required|numeric',
                     'FechaPrestamo'    => 'required|date',
                     'FechaEntrega'   => 'required|date',                        
@@ -69,7 +69,7 @@ return view ("Biblioteca.PrestamoLibros")
 
                     $Lib=new prestamoLibros;
                     $Lib->IdPrestamo=$request->IdPrestamo;
-                    $Lib->IdMatricula=$request->IdMatricula;
+                    $Lib->IdAlumno=$request->IdAlumno;
                     $Lib->IdLibro=$request->IdLibro;
                     $Lib->FechaPrestamo=$request->FechaPrestamo;
                     $Lib->FechaEntrega=$request->FechaEntrega;
@@ -124,14 +124,14 @@ return view ("Biblioteca.PrestamoLibros")
 
             public function GPrestamo(Request $request){
                 $IdPrestamo=$request->IdPrestamo;        
-                $IdMatricula=$request->IdMatricula;
+                $IdAlumno=$request->IdAlumno;
                 $IdLibro=$request->IdLibro;        
                 $FechaPrestamo=$request->FechaPrestamo;
                 $FechaEntrega=$request->FechaEntrega;
                     
                 $this->validate($request,[
                     'IdPrestamo'   => 'required|numeric',
-                    'IdMatricula'    =>'required|numeric',
+                    'IdAlumno'    =>'required|numeric',
                     'IdLibro'   => 'required|numeric',
                     'FechaPrestamo'    => 'required|date',
                     'FechaEntrega'   => 'required|date',                        
@@ -139,7 +139,7 @@ return view ("Biblioteca.PrestamoLibros")
 
                     $Lib = prestamoLibros::find($IdPrestamo);
                     $Lib->IdPrestamo=$request->IdPrestamo;
-                    $Lib->IdMatricula=$request->IdMatricula;
+                    $Lib->IdAlumno=$request->IdAlumno;
                     $Lib->IdLibro=$request->IdLibro;
                     $Lib->FechaPrestamo=$request->FechaPrestamo;
                     $Lib->FechaEntrega=$request->FechaEntrega;

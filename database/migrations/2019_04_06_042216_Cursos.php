@@ -5,7 +5,6 @@
     class Cursos extends Migration{
         public function up(){
             Schema::create('cursos', function (Blueprint $table) {
-
                 $table->increments('IdCurso');
 
                 $table->integer('IdMateria')->unsigned();
@@ -13,7 +12,7 @@
 
                 $table->integer('IdMaestro')->unsigned();
                 $table->foreign('IdMaestro')->references('IdMaestro')->on('maestros');
-
+                
                 $table->integer('IdAEs')->unsigned();
                 $table->foreign('IdAEs')->references('IdAEs')->on('anEscolares');
 

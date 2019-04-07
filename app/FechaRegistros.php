@@ -1,11 +1,13 @@
 <?php
  namespace App;
+
  use Illuminate\Database\Eloquent\Model;
  use Illuminate\Database\Eloquent\SoftDeletes;
 
-    class FechaRegistros extends Model{
+    class fechaRegistros extends Model{
         use SoftDeletes;
 
+        protected $table = 'fechaRegistros';
         protected $primaryKey = 'IdFRIR';
         protected $fillable = ['IdFRIR','LApellido','Fecha'];
 

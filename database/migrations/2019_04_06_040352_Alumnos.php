@@ -7,8 +7,6 @@
             Schema::create('alumnos', function (Blueprint $table) {
                 $table->increments('IdAlumno');     
                 $table->integer('Matricula'); 
-                
-
                 $table->string('Nombre',50);
                 $table->string('APaterno',50);
                 $table->string('AMaterno',50);
@@ -26,6 +24,7 @@
 
                 $table->integer('IdMun')->unsigned();
                 $table->foreign('IdMun')->references('IdMun')->on('municipios');
+                
                 $table->integer('IdLoc')->unsigned();
                 $table->foreign('IdLoc')->references('IdLoc')->on('localidades');
 
@@ -49,7 +48,7 @@
                 $table->SoftDeletes();
             });
         }
-        
+
         public function down(){
             Schema::drop('alumnos');
         }

@@ -1,11 +1,13 @@
 <?php
  namespace App;
+
  use Illuminate\Database\Eloquent\Model;
  use Illuminate\Database\Eloquent\SoftDeletes;
 
-    class PagoTramites extends Model{
+    class pagosTramites extends Model{
         use SoftDeletes;
 
+        protected $table = 'pagosTramites';
         protected $primaryKey = 'IdPTra';
         protected $fillable = ['IdPTra','IdAlumno','IdTramite','IdAEs','Fecha','Fotos','Baucher'];
 

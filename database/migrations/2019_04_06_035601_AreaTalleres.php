@@ -2,11 +2,11 @@
  use Illuminate\Database\Schema\Blueprint;
  use Illuminate\Database\Migrations\Migration;
 
-    class Tramites extends Migration{
+    class AreaTalleres extends Migration{
         public function up(){
-            Schema::create('tramites', function (Blueprint $table) {
-                $table->increments('IdTramite');
-                $table->string('Tramite',50);
+            Schema::create('areaTalleres', function (Blueprint $table) {
+                $table->increments('IdATaller');
+                $table->string('AreaTaller',10);
 
                 $table->rememberToken();
                 $table->timestamps();
@@ -15,6 +15,6 @@
         }
 
         public function down(){
-            Schema::drop('tramites');
+            Schema::drop('areaTalleres');
         }
     }

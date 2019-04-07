@@ -2,20 +2,20 @@
  use Illuminate\Database\Schema\Blueprint;
  use Illuminate\Database\Migrations\Migration;
 
-    class PrestamoLibros extends Migration{
+    class StatusEstudiante extends Migration{
         public function up(){
-            Schema::create('prestamoLibros', function (Blueprint $table) {
-                $table->increments('IdPrestamo');
+            Schema::create('statusEstudiantes', function (Blueprint $table) {
+                $table->increments('IdStatus');
 
                 $table->integer('IdAlumno')->unsigned();
                 $table->foreign('IdAlumno')->references('IdAlumno')->on('alumnos');
 
-                $table->integer('IdLibro')->unsigned();
-                $table->foreign('IdLibro')->references('IdLibro')->on('libros');
+                $table->integer('IdTipoBaja')->unsigned();
+                $table->foreign('IdTipoBaja')->references('IdTipoBaja')->on('tipoBajas');
                 
-                $table->date('FechaPrestamo');
-                $table->date('FechaEntrega');
-            
+                $table->date('FechaBaja');
+                $table->string('Observacion',250);
+
                 $table->rememberToken();
                 $table->timestamps();
                 $table->SoftDeletes();
@@ -23,6 +23,6 @@
         }
 
         public function down(){
-            Schema::drop('prestamoLibros'); 
+            Schema::drop('statusEstudiantes');
         }
     }

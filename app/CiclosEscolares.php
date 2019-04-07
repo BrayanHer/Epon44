@@ -1,11 +1,13 @@
 <?php
  namespace App;
+
  use Illuminate\Database\Eloquent\Model;
  use Illuminate\Database\Eloquent\SoftDeletes;
 
-    class CiclosEscolares extends Model{
+    class ciclosEscolares extends Model{
         use SoftDeletes;
 
+        protected $table = 'ciclosEscolares';
         protected $primaryKey = 'IdCEs';
         protected $fillable = ['IdCEs','Ciclo Escolar'];
 

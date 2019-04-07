@@ -1,11 +1,13 @@
 <?php
  namespace App;
+
  use Illuminate\Database\Eloquent\Model;
  use Illuminate\Database\Eloquent\SoftDeletes;
 
-    class Materias extends Model{
+    class materias extends Model{
         use SoftDeletes;
 
+        protected $table = 'materias';
         protected $primaryKey = 'IdMateria';
         protected $fillable = ['IdMateria','Materia','IdPeriodo'];
 

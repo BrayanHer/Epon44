@@ -7,10 +7,10 @@
             Schema::create('materias', function (Blueprint $table) {
                 $table->increments('IdMateria');
                 $table->string('Materia',100);
-
+    
                 $table->integer('IdPeriodo')->unsigned();
                 $table->foreign('IdPeriodo')->references('IdPeriodo')->on('periodos');
-                
+                    
                 $table->rememberToken();
                 $table->timestamps();
                 $table->SoftDeletes();

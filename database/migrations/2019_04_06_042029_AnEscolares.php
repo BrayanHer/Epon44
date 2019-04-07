@@ -15,7 +15,7 @@
 
                 $table->integer('IdPeriodo')->unsigned();
                 $table->foreign('IdPeriodo')->references('IdPeriodo')->on('periodos');
-
+                
                 $table->integer('IdGrupo')->unsigned();
                 $table->foreign('IdGrupo')->references('IdGrupo')->on('grupos');
 
