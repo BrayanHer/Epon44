@@ -86,9 +86,6 @@
         public function S_Listas(){
             return view('V_admin.A_Listas');
         }
-        public function A_Materias(){
-            return view('V_admin.Materias');
-        }
         public function RegistroP(){
             return view('Maestros.RegistroP');
         }

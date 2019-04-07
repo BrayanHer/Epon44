@@ -51,7 +51,7 @@ hr{
     <hr color="black" size=1>
     <a href="#" class="card-link">Administradores</a>
     <a href="#" class="card-link">Directivos</a>
-    <a href="{{route('A_Materias')}}" class="card-link"> Materias</a>
+    <a href="{{route('AMaterias')}}" class="card-link"> Materias</a>
   </div>
 </div>
 
