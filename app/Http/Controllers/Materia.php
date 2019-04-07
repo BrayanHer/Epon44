@@ -4,18 +4,18 @@
 
  use App\Http\Requests;
  use App\Http\Controllers\Controller;
- use App\Materias;
- use App\Periodos;
+ use App\materias;
+ use App\periodos;
 
     class Materia extends Controller{
         public function AMateria(){
             $clavequesigueM = materias::withTrashed()->orderBy('IdMateria', 'desc')
-                                        ->take(1)
-                                        ->get();
+                                                        ->take(1)
+                                                        ->get();
                 if(count($clavequesigueM)==0){
                     $IdMateria = 1;
                 }
-                else{
+                else{ 
                     $IdMateria = $clavequesigueM[0]->IdMateria + 1;
                 }
 
@@ -33,20 +33,20 @@
         }
 
         public function GMateria(Request $request){
-            $IdMateria =$request->IdMateria;        
-            $Materia   =$request->Materia;
-            $IdPeriodo =$request->IdPeriodo;
+            $IdMateria = $request->IdMateria;        
+            $Materia   = $request->Materia;
+            $IdPeriodo = $request->IdPeriodo;
                 
             $this->validate($request,[
                 'IdMateria'   => 'required|numeric',
-                'Materia'    =>'required',['regex:/^[A-Z][A-Z,a-z, ,ñ,é,ó,á,í,ú]+$/'],
+                'Materia'     =>'required',['regex:/^[A-Z][A-Z,a-z, ,ñ,é,ó,á,í,ú]+$/'],
                 'IdPeriodo'   => 'required|numeric',                      
             ]);
 
                 $Mat = new materias;
-                $Mat->IdMateria =$request->IdMateria;
-                $Mat->Materia   =$request->Materia;
-                $Mat->IdPeriodo =$request->IdPeriodo;
+                $Mat->IdMateria = $request->IdMateria;
+                $Mat->Materia   = $request->Materia;
+                $Mat->IdPeriodo = $request->IdPeriodo;
                 $Mat->save();
                 return redirect()->back();
         }

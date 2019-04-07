@@ -10,6 +10,7 @@
                 $table->string('Descripcion',400);
                 $table->dateTime('FechaHoraInicio');
                 $table->dateTime('FechaHoraFin');
+                $table->string('TipoTarea',25);
 
                 $table->integer('IdCurso')->unsigned();
                 $table->foreign('IdCurso')->references('IdCurso')->on('cursos');

@@ -43,6 +43,19 @@
 									<input type="text" class="form-control" id="Materia" name="Materia" value="{{old('Materia')}}" 
 										placeholder="Introduce la Materia">
 								</div>
+
+								@if($errors->first('IdPeriodo')) 
+									<i> {{$errors->first('IdPeriodo')}} </i> 
+								@endif	
+								<div class="form-group col-xl-12">
+									<label for="ejemplo_email_1"> Semestre </label>
+            							<select class="form-control" name='IdAlumno'>
+											@foreach($Periodos as $pe)
+												<option> Seleccione un Periodo </option>
+												<option value='{{$pe->IdPeriodo}}'>{{$pe->Periodo}} </option>
+											@endforeach
+										</select>
+								</div>
 				  			</div>
       
 	      		  			<div class="modal-footer">
