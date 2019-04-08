@@ -133,3 +133,4 @@ Route::get('/GMateria','Materia@GMateria')->name('GMateria');
 
 // Tareas
 Route::get('/TareasD','Tarea@TareasD')->name('TareasD');
+Route::POST('/Gtarea','Tarea@Gtarea')->name('Gtarea');
