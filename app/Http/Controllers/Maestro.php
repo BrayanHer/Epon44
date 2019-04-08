@@ -85,17 +85,11 @@
             return redirect()->back();
         }
 
-    //Eliminación Usuario
-        public function Des_Usuario(Request $request){
-            $Correo = $request->Correo;
-            usuarios::find($Correo)->delete(); 
-        }
-
     //Eliminación Lógica
         public function Des_Maestro($IdMaestro){
             maestros::find($IdMaestro)->delete();
-
-            return redirect()->back();  
+            
+            return redirect()->back();
         }
 
     //Activación

@@ -93,7 +93,7 @@
 							@if($errors->first('Telefono')) 
 								<small> {{ $errors->first('Telefono') }} </small> <br>
 							@endif
-							<label for="ejemplo_email_1">Telefono</label>
+							<label for="ejemplo_email_1">Teléfono</label>
 							<input type="text" class="form-control" id="Telefono" name="Telefono" placeholder="Introduce su Teléfono">
 						</div>
 <!-- --------------termina formulario -->

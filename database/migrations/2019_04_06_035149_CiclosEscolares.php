@@ -6,7 +6,7 @@
         public function up(){
             Schema::create('ciclosEscolares', function (Blueprint $table) {
                 $table->increments('IdCEs');
-                $table->string('Ciclo Escolar',50);
+                $table->string('CicloEscolar',50);
 
                 $table->rememberToken();
                 $table->timestamps();

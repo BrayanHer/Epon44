@@ -54,13 +54,12 @@
 										@endforeach
 									</select>
 							</div>
+							<div class="modal-footer">
+								<button type="submit" class="btn btn-success btn-md">
+									<span  aria-hidden="true"></span> Enviar
+								</button>
+							</div>
 		 		  		</div>
-      
-				  		<div class="modal-footer">
-							<button type="submit" class="btn btn-success btn-md">
-								<span  aria-hidden="true"></span> Enviar
-							</button>
-			  			</div>
 	  		  		</div>
 				</div> 
 			</div>
