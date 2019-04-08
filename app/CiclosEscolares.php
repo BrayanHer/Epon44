@@ -9,7 +9,7 @@
 
         protected $table = 'ciclosEscolares';
         protected $primaryKey = 'IdCEs';
-        protected $fillable = ['IdCEs','Ciclo Escolar'];
+        protected $fillable = ['IdCEs','CicloEscolar'];
 
         protected $data = ['deleted_at'];
     }
