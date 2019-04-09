@@ -167,6 +167,31 @@ Route::get('/Del_Categoria/{IdMaestro}','Maestro@Del_Categoria')->name('Del_Cate
 //Materias
 Route::get('/GMateria','Materia@GMateria')->name('GMateria');
 
-// Tareas
+//||________________________________ RUTAS DE TAREAS__________________________||
 Route::get('/TareasD','Tarea@TareasD')->name('TareasD');
 Route::POST('/Gtarea','Tarea@Gtarea')->name('Gtarea');
+//Eliminación Lógica
+Route::get('/Eltarea/{IdTarea}','Tarea@Eltarea')->name('Eltarea');
+//Activación
+Route::get('/aTarea/{IdTarea}','Tarea@aTarea')->name('aTarea');
+//Eliminación Física
+Route::get('/EFTarea/{IdTarea}','Tarea@EFTarea')->name('EFTarea');
+
+//||________________________________ RUTAS DE ADMINISTRADORES________________||
+Route::get('/C_Usuarios','Administrador@C_Usuarios')->name('C_Usuarios');
+
+//Eliminación Lógica
+Route::get('/ElUsuario/{idu}','Administrador@ElUsuario')->name('ElUsuario');
+//Activación
+Route::get('/ActUsuario/{idu}','Administrador@ActUsuario')->name('ActUsuario');
+//Eliminación Física
+Route::get('/EFUsuario/{idu}','Administrador@EFUsuario')->name('EFUsuario');
+//||________________________________ RUTAS DE PAGINA WEB________________||
+
+Route::get('/ContServicios','PaginaWeb@ContServicios')->name('ContServicios');
+Route::get('/PageServicios','PaginaWeb@PageServicios')->name('PageServicios');
+Route::get('/MFecha/{IdFRIR}','PaginaWeb@MFecha')->name('MFecha');
+Route::POST('/GFecha','PaginaWeb@GFecha')->name('GFecha');
+Route::POST('/GDescripcion','PaginaWeb@GDescripcion')->name('GDescripcion');
+
+

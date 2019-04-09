@@ -9,7 +9,7 @@
         
         protected $table = 'tareas';
         protected $primaryKey = 'IdTarea';
-        protected $fillable = ['IdTarea','IdHTF','Tema','Descripcion','FechaHoraInicio','FechaHoraFin','TipoTarea','IdCurso'];
+        protected $fillable = ['IdTarea','Tema','Descripcion','FechaHoraInicio','FechaHoraFin','TipoTarea','IdCurso'];
 
         protected $data = ['deleted_at'];
     }

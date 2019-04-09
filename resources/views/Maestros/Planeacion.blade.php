@@ -109,13 +109,13 @@ $(document).ready(function(){
 
 <div class="collapse" id="Examenes1">
   <div class="card card-body" id="Examen1">
-Hola 
+
  </div>
 </div>
 
 <div class="collapse" id="Planeaciones1">
   <div class="card card-body"id="Planeancion1">
-Adios
+
   </div>
 </div>
 </div>
