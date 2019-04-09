@@ -37,7 +37,7 @@ tbody{
                             <td>{{$user->tipo}}</td>
 							@if($user->deleted_at == "")
 							<td>
-							<a href="#">
+							<a href="{{URL::action('Administrador@ModUsuario',['idu'=>$user->idu])}}">
 								<button type="submit" class="btn btn-warning btn-sm">
 									<i class="fa fa-fw fa-pencil-square-o"></i>
 										Modificar

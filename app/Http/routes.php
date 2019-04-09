@@ -190,6 +190,11 @@ Route::get('/ElUsuario/{idu}','Administrador@ElUsuario')->name('ElUsuario');
 Route::get('/ActUsuario/{idu}','Administrador@ActUsuario')->name('ActUsuario');
 //Eliminación Física
 Route::get('/EFUsuario/{idu}','Administrador@EFUsuario')->name('EFUsuario');
+
+//Modificacion
+Route::get('/ModUsuario/{idu}','Administrador@ModUsuario')->name('ModUsuario');
+Route::POST('/GUsuario','Administrador@GUsuario')->name('GUsuario');
+
 //||________________________________ RUTAS DE PAGINA WEB________________||
 
 Route::get('/ContServicios','PaginaWeb@ContServicios')->name('ContServicios');

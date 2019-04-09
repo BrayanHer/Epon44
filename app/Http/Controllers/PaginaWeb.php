@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\fechaRegistros;
-use App\Avisos;
+use App\avisos;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Session;
@@ -13,7 +13,7 @@ use Session;
 class PaginaWeb extends Controller  
 {
     public function ContServicios(){
-        $clavequesigueA = Avisos::withTrashed()->orderBy('IdAviso', 'desc')
+        $clavequesigueA = avisos::withTrashed()->orderBy('IdAviso', 'desc')
         ->take(1)
         ->get();
 
@@ -22,9 +22,11 @@ class PaginaWeb extends Controller
     } else {
         $IdAviso = $clavequesigueA[0]->IdAviso + 1;
     }
-        $Avisos = Avisos::withTrashed()->orderBy('IdAviso', 'asc')->get();
-
+ 
+        $Avisos = avisos::withTrashed()->orderBy('IdAviso', 'asc')->get();
+  
         $Servicios = fechaRegistros::withTrashed()->orderBy('IdFRIR', 'asc')->get();
+       
 
         return view('V_admin.Servicios')
         ->with('Avisos',$Avisos)
@@ -33,7 +35,7 @@ class PaginaWeb extends Controller
 
     }
     public function PageServicios(){
-        $AvisosPage=Avisos::withTrashed()->orderBy('IdAviso', 'asc')->get();
+        $AvisosPage=avisos::withTrashed()->orderBy('IdAviso', 'asc')->get();
 
         $Servicios = fechaRegistros::withTrashed()->orderBy('IdFRIR', 'asc')->get();
 
@@ -89,7 +91,7 @@ class PaginaWeb extends Controller
 
             ]);
 
-        $Avi = new Avisos;
+        $Avi = new avisos;
         $Avi->IdAviso = $request->IdAviso;
         $Avi->Descripcion = $request->Descripcion;        
         $Avi->save();
