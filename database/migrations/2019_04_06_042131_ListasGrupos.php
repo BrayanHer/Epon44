@@ -9,7 +9,7 @@
                 
                 $table->integer('IdCEs')->unsigned();
                 $table->foreign('IdCEs')->references('IdCEs')->on('ciclosEscolares');
-
+                
                 $table->integer('IdTurno')->unsigned();
                 $table->foreign('IdTurno')->references('IdTurno')->on('turnos');
 

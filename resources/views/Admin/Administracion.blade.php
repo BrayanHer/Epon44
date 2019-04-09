@@ -51,6 +51,7 @@
         <a href="{{route('AMaterias')}}" class="card-link"> Materias</a>
         <a href="{{route('Listas')}}" class="card-link"> Listas de Grupos</a>
         <a href="{{route('C_Usuarios')}}" class="card-link">Usuarios Registrados</a>
+        <a href="{{route('ConsultaA')}}" class="card-link">Planeaciones y Exámenes</a>
       </div>
     </div>
 
