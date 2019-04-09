@@ -37,7 +37,18 @@ class Tarea extends Controller
                                                                                 GROUP BY IdCurso");
         $Materia = Materias::withTrashed()->orderBy('IdMateria', 'asc')->get(); //withTrashed -> todos ->eliminados (lógico) o no
         // ________consulta de tareas___
-        $C_Tarea=tareas::withTrashed()->orderBy('IdTarea', 'asc')->get();
+        $C_Tarea=\DB::SELECT("SELECT t.IdTarea, t.Tema, t.Descripcion, t.FechaHoraInicio, t.FechaHoraFin, t.TipoTarea, m.Materia, c.IdCurso, ma.Matricula, g.Grupo
+        FROM tareas AS t
+        INNER JOIN cursos AS c ON c.IdCurso = t.IdCurso
+        INNER JOIN materias AS m ON m.IdMateria = c.IdMateria
+        INNER JOIN maestros AS ma 
+        INNER JOIN grupos AS g ON g.IdGrupo = c.IdGrupo
+        WHERE Matricula = (SELECT u.usuario
+                                                                            FROM usuarios AS u 
+                                                                                INNER JOIN maestros AS ma ON ma.Matricula = u.usuario
+                                                                                    WHERE u.usuario LIKE  $Usuario)
+        
+        GROUP BY IdTarea");
             
 
         if (Session::get('sesionidu') != "") {
