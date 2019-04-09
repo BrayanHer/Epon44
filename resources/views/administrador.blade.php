@@ -51,7 +51,7 @@
               <a href="{{route('TareasD')}}">Tareas</a>
             </li>
             <li>
-              <a href="{{route('Planeacion')}}">Planeación y Exámenes</a>
+              <a href="{{route('ConsultaPE')}}">Planeación y Exámenes</a>
             </li>
           </ul>
         </li>

@@ -80,9 +80,7 @@
                 return redirect()->route('login');
             }          
         }
-        public function S_planenacion(){
-            return view('Maestros.Planeacion');
-        }
+        
         public function S_Listas(){
             return view('V_admin.A_Listas');
         }

@@ -33,10 +33,12 @@
 	      			Session::put('sesionname',$consulta[0]->nombre);
 							Session::put('sesionidu',$consulta[0]->idu);
 							Session::put('sesiontipo',$consulta[0]->tipo);
+							Session::put('sesionuser',$consulta[0]->usuario);
 	      
 							$sname = Session::get('sesionname');
 							$sidu = Session::get('sesionidu');
 							$stipo = Session::get('sesiontipo');
+							$suser=Session::get('sesionuser');
 				
 							return redirect()->route('principal');
 		   			}

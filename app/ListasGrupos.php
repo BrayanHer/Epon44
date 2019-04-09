@@ -9,7 +9,7 @@
 
         protected $table = 'listasGrupos';
         protected $primaryKey = 'IdLGrup';
-        protected $fillable = ['IdLGrup','IdAEs','Archivo'];
+        protected $fillable = ['IdLGrup','IdAEs','Archivo','IdCEs','IdTurno','IdPeriodo','IdGrupo'];
 
         protected $data = ['deleted_at'];
     }

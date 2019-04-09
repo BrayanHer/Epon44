@@ -13,8 +13,14 @@
                 $table->integer('IdTramite')->unsigned();
                 $table->foreign('IdTramite')->references('IdTramite')->on('tramites');
                 
-                $table->integer('IdAEs')->unsigned();
-                $table->foreign('IdAEs')->references('IdAEs')->on('anEscolares');
+                $table->integer('IdTurno')->unsigned();
+                $table->foreign('IdTurno')->references('IdTurno')->on('turnos');
+
+                $table->integer('IdPeriodo')->unsigned();
+                $table->foreign('IdPeriodo')->references('IdPeriodo')->on('periodos');
+                
+                $table->integer('IdGrupo')->unsigned();
+                $table->foreign('IdGrupo')->references('IdGrupo')->on('grupos');
 
                 $table->date('Fecha');
                 $table->string('Fotos',100);

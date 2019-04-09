@@ -7,8 +7,17 @@
             Schema::create('listasGrupos', function (Blueprint $table) {
                 $table->increments('IdLGrup');
                 
-                $table->integer('IdAEs')->unsigned();
-                $table->foreign('IdAEs')->references('IdAEs')->on('anEscolares');
+                $table->integer('IdCEs')->unsigned();
+                $table->foreign('IdCEs')->references('IdCEs')->on('ciclosEscolares');
+
+                $table->integer('IdTurno')->unsigned();
+                $table->foreign('IdTurno')->references('IdTurno')->on('turnos');
+
+                $table->integer('IdPeriodo')->unsigned();
+                $table->foreign('IdPeriodo')->references('IdPeriodo')->on('periodos');
+                
+                $table->integer('IdGrupo')->unsigned();
+                $table->foreign('IdGrupo')->references('IdGrupo')->on('grupos');
 
                 $table->string('Archivo',100);
 

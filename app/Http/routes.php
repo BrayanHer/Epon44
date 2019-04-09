@@ -26,9 +26,13 @@ Route::get('/Login','RutasView@V_Login')->name('Login');
 
 
 //Maestros
-Route::get('/Planeacion','RutasView@S_planenacion')->name('Planeacion');
-    Route::get('/RegistroE','RutasView@RegistroE')->name('RegistroE');
-    Route::get('/RegistroP','RutasView@RegistroP')->name('RegistroP');
+Route::get('/ConsultaPE','Maestro@ConsultaPE')->name('ConsultaPE');
+    Route::get('/RegistroE','Maestro@RegistroE')->name('RegistroE');
+    Route::POST('/GPlane','Maestro@GPlane')->name('GPlane');
+    Route::get('/APlaneacion','Maestro@APlaneacion')->name('APlaneacion');
+    Route::get('/AExamenes','Maestro@AExamenes')->name('AExamenes');
+      Route::POST('/GExamen','Maestro@GExamen')->name('GExamen');
+    Route::get('/RegistroP','Maestro@RegistroP')->name('RegistroP');
    //Alta
 Route::get('/Maestros','Maestro@Maestros')->name('Maestros');
 Route::POST('/G_Maestro','Maestro@G_Maestro')->name('G_Maestro');
@@ -40,6 +44,9 @@ Route::get('/Des_Maestro/{IdMaestro}','Maestro@Des_Maestro')->name('Des_Maestro'
 Route::get('/Act_Maestro/{IdMaestro}','Maestro@Act_Maestro')->name('Act_Maestro');
    //Eliminación Física
 Route::get('/Del_Categoria/{IdMaestro}','Maestro@Del_Categoria')->name('Del_Categoria');
+   //Tareas
+Route::get('/TareasD','Tarea@TareasD')->name('TareasD');
+Route::POST('/Gtarea','Tarea@Gtarea')->name('Gtarea');
 
 
 //Alumnos
@@ -72,9 +79,6 @@ Route::get('/Listas','RutasView@S_Listas')->name('Listas');
       //Modificación
         Route::get('/MMateria/{IdMateria}','Materia@MMateria')->name('MMateria');
         Route::POST('/GMateria','Materia@GMateria')->name('GMateria');
-
-   //Tareas
-        Route::get('/TareasD','Tarea@TareasD')->name('TareasD');
 
 
 //Biblioteca
@@ -148,25 +152,3 @@ Route::get('/EFPrestamo/{IdPrestamo}','PrestamoLibro@EFPrestamo')->name('EFPrest
 Route::get('/MPrestamo/{IdPrestamo}','PrestamoLibro@MPrestamo')->name('MPrestamo');
 Route::POST('/GPrestamo','PrestamoLibro@GPrestamo')->name('GPrestamo');
 
-// Login
-Route::get('/login','login@login')->name('login');
-Route::POST('/iniciasesion','login@iniciasesion')->name('iniciasesion');
-Route::get('/principal','login@principal')->name('principal');
-Route::get('/cerrarsesion','login@cerrarsesion')->name('cerrarsesion');
-// Maestro
-Route::get('/Maestros','Maestro@Maestros')->name('Maestros');
-Route::POST('/G_Maestro','Maestro@G_Maestro')->name('G_Maestro');
-Route::get('/C_Maestros','Maestro@C_Maestros')->name('C_Maestros');
-//Eliminación Lógica
-Route::get('/Des_Maestro/{IdMaestro}','Maestro@Des_Maestro')->name('Des_Maestro');
-        //Activación
-Route::get('/Act_Maestro/{IdMaestro}','Maestro@Act_Maestro')->name('Act_Maestro');
-        //Eliminación Física
-Route::get('/Del_Categoria/{IdMaestro}','Maestro@Del_Categoria')->name('Del_Categoria');
-
-//Materias
-Route::get('/GMateria','Materia@GMateria')->name('GMateria');
-
-// Tareas
-Route::get('/TareasD','Tarea@TareasD')->name('TareasD');
-Route::POST('/Gtarea','Tarea@Gtarea')->name('Gtarea');

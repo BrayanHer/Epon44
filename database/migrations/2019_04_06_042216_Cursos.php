@@ -12,9 +12,18 @@
 
                 $table->integer('IdMaestro')->unsigned();
                 $table->foreign('IdMaestro')->references('IdMaestro')->on('maestros');
+
+                $table->integer('IdCEs')->unsigned();
+                $table->foreign('IdCEs')->references('IdCEs')->on('ciclosEscolares');
+
+                $table->integer('IdTurno')->unsigned();
+                $table->foreign('IdTurno')->references('IdTurno')->on('turnos');
+
+                $table->integer('IdPeriodo')->unsigned();
+                $table->foreign('IdPeriodo')->references('IdPeriodo')->on('periodos');
                 
-                $table->integer('IdAEs')->unsigned();
-                $table->foreign('IdAEs')->references('IdAEs')->on('anEscolares');
+                $table->integer('IdGrupo')->unsigned();
+                $table->foreign('IdGrupo')->references('IdGrupo')->on('grupos');
 
                 $table->rememberToken();
                 $table->timestamps();

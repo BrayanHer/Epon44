@@ -7,7 +7,7 @@
             Schema::create('avisos', function (Blueprint $table) {
                 $table->increments('IdAviso');
                 $table->string('Imagen',100);
-                $table->date('Descripcion',500);
+                $table->string('Descripcion',500);
             
                 $table->rememberToken();
                 $table->timestamps();

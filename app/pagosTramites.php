@@ -9,7 +9,7 @@
 
         protected $table = 'pagosTramites';
         protected $primaryKey = 'IdPTra';
-        protected $fillable = ['IdPTra','IdAlumno','IdTramite','IdAEs','Fecha','Fotos','Baucher'];
+        protected $fillable = ['IdPTra','IdAlumno','IdTramite','IdCEs','IdTurno','IdPeriodo','IdGrupo','Fecha','Fotos','Baucher'];
 
         protected $data = ['deleted_at'];
     }

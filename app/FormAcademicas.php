@@ -9,7 +9,7 @@
 
         protected $table = 'formAcademicas';
         protected $primaryKey = 'IdFAc';
-        protected $fillable = ['IdFAc','IdAlumno','IdAEs'];
+        protected $fillable = ['IdFAc','IdAlumno','IdCEs','IdTurno','IdPeriodo','IdGrupo'];
 
         protected $data = ['deleted_at'];
     }
