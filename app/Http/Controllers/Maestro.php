@@ -252,6 +252,39 @@
                         ->with('Consulta', $Consulta);
         }
         
+
+        //Consulta Admin
+        public function ConsultaA(){
+            return view('Maestros.ConsultaA');
+        }
+
+        public function ConsultaP(){
+            $Consulta =\DB::SELECT("SELECT e.IdPlane, c.IdCurso, ce.CicloEscolar, p.Periodo ,concat(ma.NombreM,' ',ma.APaterno,' ',ma.AMaterno)as Maestro, m.Materia, ma.Matricula, e.updated_at, e.Archivo, ma.Matricula
+                                        FROM cursos AS c
+                                            INNER JOIN maestros AS ma ON ma.IdMaestro = c.IdMaestro
+                                            INNER JOIN ciclosEscolares AS ce ON ce.IdCEs = c.IdCEs
+                                            INNER JOIN materias AS m ON m.IdMateria = c.`IdMateria`
+                                            INNER JOIN periodos AS p ON p.IdPeriodo = c.IdPeriodo
+                                            INNER JOIN planeaciones AS e ON e.IdCurso  = c.IdCurso");
+                                         
+                return view('Maestros.ConsultaP')
+                        ->with('Consulta', $Consulta);
+        }
+
+        
+
+        public function ConsultaE(){
+            $Consulta =\DB::SELECT("SELECT e.IdExam, c.IdCurso, ce.CicloEscolar, p.Periodo ,concat(ma.NombreM,' ',ma.APaterno,' ',ma.AMaterno)as Maestro, m.Materia, ma.Matricula, e.updated_at, e.Archivo, ma.Matricula
+                                        FROM cursos AS c
+                                            INNER JOIN maestros AS ma ON ma.IdMaestro = c.IdMaestro
+                                            INNER JOIN ciclosEscolares AS ce ON ce.IdCEs = c.IdCEs
+                                            INNER JOIN materias AS m ON m.IdMateria = c.`IdMateria`
+                                            INNER JOIN periodos AS p ON p.IdPeriodo = c.IdPeriodo
+                                            INNER JOIN examenes AS e ON e.IdCurso = c.`IdCurso`");
+                                                
+                return view('Maestros.ConsultaE')
+                        ->with('Consulta', $Consulta);
+        }
     }
 
 

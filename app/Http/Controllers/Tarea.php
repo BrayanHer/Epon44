@@ -14,8 +14,8 @@ class Tarea extends Controller
     public function TareasD()
     {
         $clavequesigueA = tareas::withTrashed()->orderBy('IdTarea', 'desc')
-            ->take(1)
-            ->get();
+                                ->take(1)
+                                ->get();
 
         if (count($clavequesigueA) == 0) {
             $IdTarea = 1;
@@ -23,7 +23,19 @@ class Tarea extends Controller
             $IdTarea = $clavequesigueA[0]->IdTarea + 1;
         }
 
-        $Cursos = Cursos::withTrashed()->orderBy('IdMateria', 'asc')->get();
+        $Usuario = Session::get('sesionuser');
+        $Cursos = \DB::SELECT("SELECT c.IdCurso, g.Grupo, ma.Matricula, m.Materia
+        FROM cursos AS c
+                                            INNER JOIN maestros AS ma ON ma.IdMaestro = c.IdMaestro
+                                            INNER JOIN planeaciones AS e
+                                            INNER JOIN materias as m m.IdMateria = c.IdMateria
+                                            INNER JOIN grupos AS g ON g.IdGrupo  = c.IdGrupo 
+                                            
+                                            WHERE Matricula = (SELECT u.usuario
+                                                                        FROM usuarios AS u 
+                                                                            INNER JOIN maestros AS ma ON ma.Matricula = u.usuario
+                                                                                WHERE u.usuario LIKE $Usuario)
+                                                                                GROUP BY IdCurso");
         $Materia = Materias::withTrashed()->orderBy('IdMateria', 'asc')->get(); //withTrashed -> todos ->eliminados (lógico) o no
         // ________consulta de tareas___
         $C_Tarea=tareas::withTrashed()->orderBy('IdTarea', 'asc')->get();

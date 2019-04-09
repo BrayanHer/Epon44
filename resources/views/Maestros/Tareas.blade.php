@@ -34,7 +34,7 @@
                                     <div class="form-group col-xl-12">
 									    <strong for="ejemplo_email_1"> Seleccione el Grupo</strong><br>
                                         @foreach($Cursos as $cur)
-                                        <input type="checkbox" class="inlineRadio1" id="SelGrupo" name="SelGrupo[]" value="{{$cur->IdCurso}}">{{$cur->IdCurso}}
+                                        <input type="checkbox" class="inlineRadio1" id="SelGrupo" name="SelGrupo[]" value="{{$cur->IdCurso}}">{{$cur->Grupo}}
                                         @endforeach
                                     </div>
                      
@@ -43,8 +43,8 @@
                                         <strong class="col-xl-10" id="cen"> Materia </strong>
     
                                         <select class="form-control" name='Materia' id="Materia">
-                                            @foreach($Materia as $mat)
-                                                <option value='{{$mat->IdMateria}}'>{{$mat->Materia}}</option>
+                                            @foreach($Cursos as $cur)
+                                                <option value='{{$cur->IdCurso}}'>{{$cur->Materia}}</option>
                                             @endforeach
                                         </select>
                                         <br>
@@ -135,60 +135,27 @@
 				<thead align="center" class="thead-dark col-md-12">
 					<tr>
 						<th scope="col-md-10">Clave</th>
+						<th scope="col-md-10">Materia</th>
 						<th scope="col-md-10">Tema</th>
 						<th scope="col-md-10">Descripcion</th>
 						<th scope="col-md-10">Fecha de Inici</th>
                         <th scope="col-md-10">Fecha de entrega</th>
                         <th scope="col-md-10">Tipo Entrega</th>
                         <th scope="col-md-10">Grupos</th>
-						<th colspan="2" scope="col-md-10"><i class="fa fa-angle-down"></i> &nbsp;Opciones</th>
 					</tr>
 				</thead>
 				@foreach($C_Tarea as $tar)
 				<tbody class="col-md-10">
 					<tr align="center">
 						<th scope="row">{{$tar->IdTarea}}</th>
+						<td>{{$tar->Materia}}</td>
 						<td>{{$tar->Tema}}</td>
 						<td>{{$tar->Descripcion}}</td>
 						<td>{{$tar->FechaHoraInicio}}</td>
                         <td>{{$tar->FechaHoraFin}}</td>
                         <td>{{$tar->TipoTarea}}</td>
-                        <td>{{$tar->IdCurso}}</td>
-                        @if($tar->deleted_at == "")
-						<td>
-							<button type="submit" class="btn btn-warning">
-								<i class="fa fa-fw fa-pencil-square-o"></i>
-									Modificar
-							</button>
-						</td>
-						<td>
-                        <a href="{{URL::action('Tarea@Eltarea',['IdTarea'=>$tar->IdTarea])}}">
-							<button type="submit" class="btn btn-danger">
-								<i class="fa fa-fw fa-toggle-off"></i>
-									Desactivar
-							</button>
-                            </a>
-						</td>
-								
-						@else
-						<td>
-						<a href="{{URL::action('Tarea@aTarea',['IdTarea'=>$tar->IdTarea])}}">
-							<button type="submit" class="btn btn-success">
-								<i class="fa fa-fw fa-reply"></i> 
-									&nbsp;Activar&nbsp;&nbsp;
-							</button>
-					</a>
-						</td>
-						<td>
-						<a href="{{URL::action('Tarea@EFTarea',['IdTarea'=>$tar->IdTarea])}}">
-							<button type="submit" class="btn btn-danger">
-								<i class="fa fa-fw fa-trash"></i> 
-									&nbsp;&nbsp;Eliminar&nbsp;
-							</button>
-						</a>
-						</td>
-						@endif
-                        </tr>
+                        <td>{{$tar->Grupo}}</td>
+                        
 				@endforeach
   				</tbody>
 	        </table>
