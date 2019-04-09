@@ -45,10 +45,10 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseComponents">
             <li>
-              <a href="#">Estudiantes</a>
+              <a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i> &nbsp;Estudiantes</a>
             </li>
             <li>
-              <a href="{{route('TareasD')}}">Tareas</a>
+              <a href="{{route('TareasD')}}"><i class="fa fa-circle-o" aria-hidden="true"></i> &nbsp;Tareas</a>
             </li>
             <li>
               <a href="{{route('ConsultaPE')}}">Planeación y Exámenes</a>
@@ -66,17 +66,17 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
             <li>
-              <a href="#">Tareas</a>
+              <a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i> &nbsp;Tareas</a>
             </li>
             @if(Session::get('sesionreg')=="si")
             
            @else
             <li>
-              <a href="{{route('Alumnos')}}">Información Personal</a>
+              <a href="{{route('Alumnos')}}"><i class="fa fa-circle-o" aria-hidden="true"></i> &nbsp;Información Personal</a>
             </li>
              @endif
              <li>
-              <a href="#">Foros</a>
+              <a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i> &nbsp;Foros</a>
             </li>
           </ul>
         </li>
@@ -92,19 +92,19 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseMulti">
             <li>
-              <a href="{{route('AltasP')}}">Prestamo de Libros</a>
+              <a href="{{route('AltasP')}}"><i class="fa fa-circle-o" aria-hidden="true"></i> &nbsp;Prestamo de Libros</a>
             </li>
             <li>
-              <a href="{{route('AltasL')}}">Libros</a>
+              <a href="{{route('AltasL')}}"><i class="fa fa-circle-o" aria-hidden="true"></i> &nbsp;Libros</a>
             </li>
             <li>
-              <a href="{{route('AltasA')}}">Autores</a>
+              <a href="{{route('AltasA')}}"><i class="fa fa-circle-o" aria-hidden="true"></i> &nbsp;Autores</a>
             </li>
             <li>
-              <a href="{{route('AltasE')}}">Editoriales</a>
+              <a href="{{route('AltasE')}}"><i class="fa fa-circle-o" aria-hidden="true"></i> &nbsp;Editoriales</a>
             </li>
             <li>
-              <a href="{{route('AltasC')}}">Categorías</a>
+              <a href="{{route('AltasC')}}"><i class="fa fa-circle-o" aria-hidden="true"></i> &nbsp;Categorías</a>
             </li>
           </ul>
   @endif
@@ -118,13 +118,13 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseAdmin">
             <li>
-              <a href="{{route('Administracion')}}">Configuración General</a>
+              <a href="{{route('Administracion')}}"><i class="fa fa-circle-o" aria-hidden="true"></i> &nbsp;Configuración General</a>
             </li>
             <li>
-              <a href="{{route('Listas')}}">Listas de Grupos</a>
+              <a href="{{route('Listas')}}"><i class="fa fa-circle-o" aria-hidden="true"></i> &nbsp;Listas de Grupos</a>
             </li>
             <li>
-              <a href="Asignar Materias">Autores</a>
+              <a href="{{route('C_Usuarios')}}"><i class="fa fa-circle-o" aria-hidden="true"></i> &nbsp;Lista de Usuarios</a>
             </li>
           </ul>
 @endif

@@ -24,11 +24,14 @@ class Tarea extends Controller
         }
 
         $Cursos = Cursos::withTrashed()->orderBy('IdMateria', 'asc')->get();
-        $Materia = Materias::withTrashed()->orderBy('IdMateria', 'asc') //withTrashed -> todos ->eliminados (lógico) o no
-            ->get();
+        $Materia = Materias::withTrashed()->orderBy('IdMateria', 'asc')->get(); //withTrashed -> todos ->eliminados (lógico) o no
+        // ________consulta de tareas___
+        $C_Tarea=tareas::withTrashed()->orderBy('IdTarea', 'asc')->get();
+            
 
         if (Session::get('sesionidu') != "") {
             return view('Maestros.Tareas')
+                ->with('C_Tarea', $C_Tarea)
                 ->with('Cursos', $Cursos)
                 ->with('Materia', $Materia)
                 ->with('IdTarea', $IdTarea);
@@ -50,24 +53,43 @@ class Tarea extends Controller
         $Descripción = $request->Descripción;
         $IdCurso = $request->SelGrupo;
         $TipoTarea = $request->TipoTarea;
-
-        // dd($I 
-
-        for ($n=0; $n < count($IdCurso); $n++)
+    
+      
+        for ($n=0; $n<count($IdCurso); $n++)
          {
                 $Tarea = new tareas;
-                $Tarea->IdTarea = $request->IdTarea+1;
                 $Tarea->Tema = $request->Tema;
                 $Tarea->Descripcion = $request->Descripción;
                 $Tarea->FechaHoraInicio = $FechaHoraInicio;
                 $Tarea->FechaHoraFin = $FechaHoraFin;
-                $Tarea->IdCurso = $arreglo;
+                $Tarea->IdCurso = $IdCurso[$n];
                 $Tarea->TipoTarea = $request->TipoTarea;
                 $Tarea->save();
-           
-            return redirect()->back();
-        }
 
+           
+        }
+        return redirect()->back();
  
+    }
+
+    //Eliminación Lógica
+    public function Eltarea($IdTarea){
+        tareas::find($IdTarea)->delete();
+
+        return redirect()->back();
+    }
+
+//Activación
+    public function aTarea($IdTarea){
+        tareas::withTrashed()->where('IdTarea',$IdTarea)->restore();
+
+        return redirect()->back();
+    }
+
+//Eliminación Física
+    public function EFTarea($IdTarea){
+        tareas::withTrashed()->where('IdTarea',$IdTarea)->forceDelete();
+        
+        return redirect()->back();
     }
 }

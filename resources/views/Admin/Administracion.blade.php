@@ -50,6 +50,7 @@
         <a href="#" class="card-link">Directivos</a>
         <a href="{{route('AMaterias')}}" class="card-link"> Materias</a>
         <a href="{{route('Listas')}}" class="card-link"> Listas de Grupos</a>
+        <a href="{{route('C_Usuarios')}}" class="card-link">Usuarios Registrados</a>
       </div>
     </div>
 
@@ -58,10 +59,9 @@
         <h5 class="card-title"><i class="fa fa-globe" aria-hidden="true"></i>
         &nbsp;Página Web</h5>
         <hr color="black" size=1>
-        <a href="#" class="card-link"><i class="fa fa-cog" aria-hidden="true"></i>
-          Servicios Y Trámites</a>
-        <a href="#" class="card-link"><i class="fa fa-cog" aria-hidden="true"></i>
-          Talleres y Actividadess</a>
+
+        <a href="{{route('ContServicios')}}" class="card-link"><i class="fa fa-cog" aria-hidden="true"></i>Servicios Y Trámites</a>
+        <a href="#" class="card-link"><i class="fa fa-cog" aria-hidden="true"></i>Talleres y Actividadess</a>
         <a href="#" class="card-link"></a>
       </div>
     </div>

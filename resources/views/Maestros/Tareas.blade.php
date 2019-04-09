@@ -115,8 +115,85 @@
                             </div>  
                         </div> 
 <!-- Modal close -->
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </form>
+
+<!-- inicia registros de tareas -->
+<div class="col-md-12">
+    <div class="hidden-lg"></div>
+    <h3 class="page-header">
+        <small>Registros Obtenidos</small>
+    </h3>
+	<hr color="black" size=1>
+</div>
+<div class="col-md-12"> 
+			<table class="table">
+				<thead align="center" class="thead-dark col-md-12">
+					<tr>
+						<th scope="col-md-10">Clave</th>
+						<th scope="col-md-10">Tema</th>
+						<th scope="col-md-10">Descripcion</th>
+						<th scope="col-md-10">Fecha de Inici</th>
+                        <th scope="col-md-10">Fecha de entrega</th>
+                        <th scope="col-md-10">Tipo Entrega</th>
+                        <th scope="col-md-10">Grupos</th>
+						<th colspan="2" scope="col-md-10"><i class="fa fa-angle-down"></i> &nbsp;Opciones</th>
+					</tr>
+				</thead>
+				@foreach($C_Tarea as $tar)
+				<tbody class="col-md-10">
+					<tr align="center">
+						<th scope="row">{{$tar->IdTarea}}</th>
+						<td>{{$tar->Tema}}</td>
+						<td>{{$tar->Descripcion}}</td>
+						<td>{{$tar->FechaHoraInicio}}</td>
+                        <td>{{$tar->FechaHoraFin}}</td>
+                        <td>{{$tar->TipoTarea}}</td>
+                        <td>{{$tar->IdCurso}}</td>
+                        @if($tar->deleted_at == "")
+						<td>
+							<button type="submit" class="btn btn-warning">
+								<i class="fa fa-fw fa-pencil-square-o"></i>
+									Modificar
+							</button>
+						</td>
+						<td>
+                        <a href="{{URL::action('Tarea@Eltarea',['IdTarea'=>$tar->IdTarea])}}">
+							<button type="submit" class="btn btn-danger">
+								<i class="fa fa-fw fa-toggle-off"></i>
+									Desactivar
+							</button>
+                            </a>
+						</td>
+								
+						@else
+						<td>
+						<a href="{{URL::action('Tarea@aTarea',['IdTarea'=>$tar->IdTarea])}}">
+							<button type="submit" class="btn btn-success">
+								<i class="fa fa-fw fa-reply"></i> 
+									&nbsp;Activar&nbsp;&nbsp;
+							</button>
+					</a>
+						</td>
+						<td>
+						<a href="{{URL::action('Tarea@EFTarea',['IdTarea'=>$tar->IdTarea])}}">
+							<button type="submit" class="btn btn-danger">
+								<i class="fa fa-fw fa-trash"></i> 
+									&nbsp;&nbsp;Eliminar&nbsp;
+							</button>
+						</a>
+						</td>
+						@endif
+                        </tr>
+				@endforeach
+  				</tbody>
+	        </table>
+        </div>
+<!-- fin de regestros de tareas -->
 @stop
+
 
