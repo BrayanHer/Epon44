@@ -24,11 +24,10 @@ class Tarea extends Controller
         }
 
         $Usuario = Session::get('sesionuser');
-        $Cursos = \DB::SELECT("SELECT c.IdCurso, g.Grupo, ma.Matricula, m.Materia
+        $Cursos = \DB::SELECT("SELECT c.IdCurso, g.Grupo, ma.Matricula
         FROM cursos AS c
                                             INNER JOIN maestros AS ma ON ma.IdMaestro = c.IdMaestro
                                             INNER JOIN planeaciones AS e
-                                            INNER JOIN materias as m m.IdMateria = c.IdMateria
                                             INNER JOIN grupos AS g ON g.IdGrupo  = c.IdGrupo 
                                             
                                             WHERE Matricula = (SELECT u.usuario

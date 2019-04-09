@@ -43,8 +43,8 @@
                                         <strong class="col-xl-10" id="cen"> Materia </strong>
     
                                         <select class="form-control" name='Materia' id="Materia">
-                                            @foreach($Cursos as $cur)
-                                                <option value='{{$cur->IdCurso}}'>{{$cur->Materia}}</option>
+                                            @foreach($Materia as $mat)
+                                                <option value='{{$mat->IdMateria}}'>{{$mat->Materia}}</option>
                                             @endforeach
                                         </select>
                                         <br>
