@@ -6,6 +6,7 @@ use App\Cursos;
 use App\Http\Controllers\Controller;
 use App\Materias;
 use App\tareas;
+use App\tareasEntregadas;
 use Illuminate\Http\Request;
 use Session;
 
@@ -113,5 +114,69 @@ class Tarea extends Controller
         tareas::withTrashed()->where('IdTarea',$IdTarea)->forceDelete();
         
         return redirect()->back();
+    }
+
+    public function CalTarea(){
+        $Usuario = Session::get('sesionuser');
+        $Califica = \DB::SELECT("SELECT te.IdTEnt, m.Materia, t.Tema, CONCAT(a.Matricula,' -',a.Nombre,' ',a.APaterno,' ',a.AMaterno) AS Alumno, 
+                                        te.`Archivo`, te.Calificacion, ma.Matricula
+                                    FROM tareasEntregadas AS te
+                                        INNER JOIN tareas AS t ON t.IdTarea = te.`IdTarea`
+                                        INNER JOIN alumnos AS a ON a.IdAlumno = te.`IdAlumno`
+                                        INNER JOIN materias AS m 
+                                        INNER JOIN cursos AS c ON c.`IdMateria` = m.IdMateria
+                                        INNER JOIN maestros AS ma
+                                            WHERE ma.Matricula = (SELECT u.usuario
+                                                                        FROM usuarios AS u 
+                                                                                INNER JOIN maestros AS ma ON ma.Matricula = u.usuario
+                                                                                    WHERE u.usuario LIKE $Usuario)
+                                    GROUP BY IdTEnt");
+
+        return view ('Maestros.CalificaT')
+                ->with('Califica', $Califica);
+    }
+
+public function ModCalificacion($IdTEnt){
+    $Usuario = Session::get('sesionuser');
+        $Califica = \DB::SELECT("SELECT te.IdTEnt, m.Materia, t.Tema,a.IdAlumno, CONCAT(a.Matricula,' -',a.Nombre,' ',a.APaterno,' ',a.AMaterno) AS Alumno, 
+                                        te.Archivo, te.Calificacion, ma.Matricula, t.IdTarea
+                                    FROM tareasEntregadas AS te
+                                        INNER JOIN tareas AS t ON t.IdTarea = te.`IdTarea`
+                                        INNER JOIN alumnos AS a ON a.IdAlumno = te.`IdAlumno`
+                                        INNER JOIN materias AS m 
+                                        INNER JOIN cursos AS c ON c.`IdMateria` = m.IdMateria
+                                        INNER JOIN maestros AS ma
+                                            WHERE ma.Matricula = (SELECT u.usuario
+                                                                        FROM usuarios AS u 
+                                                                                INNER JOIN maestros AS ma ON ma.Matricula = u.usuario
+                                                                                    WHERE u.usuario LIKE $Usuario)
+                                            and IdTEnt = $IdTEnt
+                                    GROUP BY IdTEnt");
+
+        return view ('Maestros.ModCalificacion')
+                ->with('Califica', $Califica[0]);
+    }
+
+    public function GCali(Request $request)
+    {
+        // _________________Obtenemos datos_______________________
+
+        $IdTEnt = $request->IdTEnt;
+        $IdTarea = $request->IdTarea;
+        $IdAlumno = $request->IdAlumno;
+        $Archivo = $request->Archivo;
+        $Calificacion = $request->Calificacion;
+    
+      
+        
+                $Tarea = tareasEntregadas::find($IdTEnt);
+                $Tarea->IdTEnt = $request->IdTEnt;
+                $Tarea->IdTarea = $request->IdTarea;
+                $Tarea->IdAlumno = $request->IdAlumno;
+                $Tarea->Archivo = $request->Archivo;
+                $Tarea->Calificacion = $request->Calificacion;
+                $Tarea->save();
+                return redirect('CalTarea');
+ 
     }
 }

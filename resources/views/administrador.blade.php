@@ -66,7 +66,7 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
             <li>
-              <a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i> &nbsp;Tareas</a>
+              <a href="{{route('RegistroP')}}"><i class="fa fa-circle-o" aria-hidden="true"></i> &nbsp;Tareas</a>
             </li>
             @if(Session::get('sesionreg')=="si")
             
@@ -76,7 +76,6 @@
             </li>
              @endif
              <li>
-              <a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i> &nbsp;Foros</a>
             </li>
           </ul>
         </li>

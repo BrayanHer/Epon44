@@ -54,6 +54,9 @@ Route::get('/Del_Categoria/{IdMaestro}','Maestro@Del_Categoria')->name('Del_Cate
 Route::get('/Alumnos','Alumno@Alumnos')->name('Alumnos');
 Route::POST('/GAlumnos','Alumno@GAlumnos')->name('GAlumnos');
 Route::get('/C_alumno','Alumno@C_alumno')->name('C_alumno');
+Route::get('/RegistroP','Alumno@RegistroP')->name('RegistroP');
+Route::POST('/GTarea','Alumno@GTarea')->name('GTarea');
+
 
 
 //Administrador
@@ -163,7 +166,9 @@ Route::get('/Eltarea/{IdTarea}','Tarea@Eltarea')->name('Eltarea');
 Route::get('/aTarea/{IdTarea}','Tarea@aTarea')->name('aTarea');
 //Eliminación Física
 Route::get('/EFTarea/{IdTarea}','Tarea@EFTarea')->name('EFTarea');
-
+Route::get('/CalTarea','Tarea@CalTarea')->name('CalTarea');
+Route::get('/ModCalificacion/{IdTEnt}','Tarea@ModCalificacion')->name('ModCalificacion');
+Route::POST('/GCali','Tarea@GCali')->name('GCali');
 //||________________________________ RUTAS DE ADMINISTRADORES________________||
 Route::get('/C_Usuarios','Administrador@C_Usuarios')->name('C_Usuarios');
 

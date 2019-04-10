@@ -7,6 +7,7 @@
  use App\municipios;
  use App\localidades;
  use App\usuarios;
+ use App\tareasEntregadas;
  use Session;
 
 	class Alumno extends Controller{
@@ -182,4 +183,54 @@
 	
 			return redirect()->back();
 		}
+
+		public function RegistroP(){
+			$clavequesigueA = tareasEntregadas::withTrashed()->orderBy('IdTEnt', 'desc')
+                                        ->take(1)
+                                        ->get();
+                if(count($clavequesigueA)==0){
+                    $IdTEnt = 1;
+                }
+                else{
+                    $IdTEnt = $clavequesigueA[0]->IdTEnt + 1;
+                }
+            $Usuario = Session::get('sesionuser');
+            $Consulta =\DB::SELECT("SELECT c.IdCurso, a.IdAlumno, a.Matricula,ac.aluCru,t.TipoTarea, m.Materia, t.`Tema`, t.`Descripcion`, t.`FechaHoraInicio`, t.`FechaHoraFin`, te.`Archivo`, t.IdTarea
+			FROM cursos AS c
+				   INNER JOIN alumnos AS a
+				   INNER JOIN aluCur AS ac ON ac.`IdCurso` = c.`IdCurso`
+				   INNER JOIN tareas AS t ON t.IdCurso = c.`IdCurso`
+				   INNER JOIN materias AS m ON m.IdMateria = c.`IdMateria`
+				   INNER JOIN tareasEntregadas AS te ON te.`IdAlumno` = ac.`IdAlumno`
+				   WHERE Matricula = (SELECT u.usuario
+																			FROM usuarios AS u 
+																				INNER JOIN alumnos AS ma ON ma.Matricula = u.usuario
+																					WHERE u.usuario LIKE $Usuario)
+																					GROUP BY aluCru");
+                                         
+				return view('Alumnos.RecibeAL')
+				->with('IdTEnt',$IdTEnt)
+                        ->with('Consulta', $Consulta);
+		}
+		
+		public function GTarea(Request $request){
+            $IdTEnt  = $request->IdTEnt;        
+			$IdAlumno   = $request->IdAlumno;
+			$IdTEnt  = $request->IdTEnt;
+			$Archivo = $request->Archivo;		 
+                $this->validate($request,[
+                    'IdTEnt'   => 'required|numeric',
+                    'IdTarea'    => 'required|numeric'
+                ]);
+
+            $Aut = new tareasEntregadas;
+            $Aut->IdTEnt  = $request->IdTEnt;
+			$Aut->IdTarea   = $request->IdTarea; 
+			$Aut->IdAlumno  = $request->IdAlumno;       
+            $Aut->Archivo = $request->Archivo;       
+            $Aut->Calificacion = 0;
+            $Aut->save();
+
+                return redirect()->back();
+        }
 	}

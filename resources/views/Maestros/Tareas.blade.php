@@ -8,11 +8,23 @@
     {{csrf_field()}}
     <div class="container">
         <div class="row">
-            <div class="alert alert-success col-md-12" role="alert" align="center">
+            <div class="row col-md-12">
+            <div class="alert alert-success col-lg-5" role="alert" align="center">
                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#IdLibros">
                     <i class="fa fa-fw fa-plus"></i>
                 </button> &nbsp; Agregar nuevo "Tarea"
             </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="alert alert-warning col-md-5" role="alert" align="center">
+            <a href="{{route('CalTarea')}}">
+            <button type="button" class="btn btn-warning" data-toggle="modal" id="Modificar">
+                    <i class="fa fa-fw fa-edit"></i>
+                </button></a>   &nbsp; Calificar Tarea
+              
+            </div>
+            </div>
+            
+        
 <!-- Modal -->
             <div class="modal fade" id="IdLibros" tabindex="-1" role="dialog" aria-labelledby="IdLibrosLabel" aria-hidden="true">
                 <div class="modal-dialog modal-md">
